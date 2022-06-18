@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;700&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: 'Quicksand',Arial, Helvetica, sans-serif;
+}
+
+html,body{
+    height: 100%;
+}
+/*formataçoes principais */
+
+/* cabeçalho incio*/
+
+/*geral*/
+header{
+    width: 100%;
+    height: auto;
+    position: relative;
+    background-image:linear-gradient(to right,#007bff,#00ffa6);
+}
+/*geral*/
+
+/*calango*/
+header .logo-header{
+    margin: auto;
+    width: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .logo-header img{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+}
+/*calango*/
+
+/*menu abre-fecha*/
+aside{
+    width: max-content;
+    position:absolute;
+    top: 0;
+}
+
+aside img{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    position: relative;
+    left: 2em;
+    top: 2em;
+}
+
+aside img:hover{
+    cursor: pointer;
+    background-color: rgba(0, 74, 153, 0.3);
+    transition: 0.3s;
+}
+
+aside .menu{
+    display: none;
+    border-radius: 10px;
+    top: 1em;
+    left: 10px;
+    width: 30%;
+    height: 100%;
+    position: absolute;
+    min-width: 300px;
+    min-height: 95vh;
+    background-color: whitesmoke;
+    z-index: 2;
+}
+
+aside .menu ul{
+    margin-top: 2em;
+}
+
+aside .menu ul li{
+    list-style: none;
+    margin:  auto;
+    width: 90%;
+    border-bottom: 1px solid;
+    padding: 1em 0 ;
+    text-align: center;
+}
+
+aside .menu ul li a{
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+aside .menu ul li a:hover{
+    transition: 0.5s;
+    background-color: lightgray;
+}
+
+aside .menu h1{
+    text-align: center;
+    margin: 20px 0;
+    font-size: 20px;
+}
+
+aside .menu img{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    padding: 5px;
+    top:2em;
+}
+
+aside .menu img:hover{
+    background-color: red;
+}
+
+aside .menu .logo{
+    width: max-content;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    width:150px;
+    height: 150px;
+    position: relative;
+    left: 3em;
+}
+
+aside .menu .logo:hover{
+    background-color: inherit;
+    cursor: auto;
+}
+
+/*menu abre-fecha*/
+
+/*links*/
+nav{
+    width: 100%;
+    position: relative;
+    background-image: linear-gradient(to right,#004a99,#038256);
+}
+
+nav ul{
+    list-style:none;
+    text-align: center;
+}
+
+nav ul li{
+    display: inline;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 0 2em;
+    font-size: 30px;
+}
+
+nav ul li a:hover{
+    transition: 0.3s;
+    color: darkgray;
+}
+/*links*/
+
+/*secao de opcoes inicio */
+section{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    background-color: lightgrey;
+}
+/*secao de opcoes inicio */
+/*cabecalho final*/
+
+/*conteudo principal incio */
+main{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+main .logo-conteudo{
+    position: relative;
+    margin: 3em;
+}
+
+main .logo-conteudo img{
+    background-color: whitesmoke;
+    position: relative;
+    width: 90px;
+    height: 90px;
+    padding: 10px;
+    border-radius: 100%;
+    border: 2px solid #00ffa6;
+    z-index: 1;
+}
+
+main .logo-conteudo h1{
+    font-weight: normal;
+    font-size: 35px;
+    background-color: #038256;
+    width: max-content;
+    color: whitesmoke;
+    padding: 20px 20px 20px 3em;
+    border-radius: 50px;
+    position: relative;
+    left: 1em;
+    top: -3em;
+}
+
+/*conteudo principal final */
+
+/*rodape incio*/
+footer{
+    width: 100%;
+    height: auto;
+    position: relative;
+    background-image:linear-gradient(to right,#022c58,#01462e);
+}
+
+/*calango*/
+footer .logo-footer{
+    width: max-content;
+    position: relative;
+    left: 1em;
+    top: 1em;
+}
+
+footer .logo-footer img{
+    width:100px;
+    height: 100px;
+    border-radius: 100%;
+}
+
+footer .logo-footer img:hover{
+    background-image: linear-gradient(to right,#007bff,#00ffa6);
+    cursor: pointer;
+}
+/*calango*/
+
+/*instagram*/
+footer .instagram{
+    width: max-content;
+    position: relative;
+    margin: auto;
+    top: -5em;
+}
+/*logo insta*/
+footer .insta{
+    padding: 1em;
+    margin: auto;
+    width: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-bottom: 1px solid whitesmoke;
+}
+
+footer .insta h1{
+    text-align: center;
+    font-size: 20px;
+    color: whitesmoke;
+    font-weight: normal;
+}
+
+footer .insta img{
+    margin-left: 1em;
+    width: 30px;
+    height: 30px;
+}
+/*logo insta*/
+
+/*fouram gofront*/
+footer .patrocinios{
+    position: relative;
+    padding: 1em;
+}
+
+footer .patrocinios img{
+    padding: 12px;
+    border-radius: 20px;
+}
+
+footer .patrocinios img:hover{
+    background-color: whitesmoke;
+    transition: 0.3s;
+}
+
+footer .patrocinios .GF{
+    width: 50px;
+    height: 60px;
+}
+
+footer .patrocinios .FAM{
+    width: 130px;
+    height: 50px;
+}
+
+/*fouram gofront*/
+
+/*instagram*/
+
+/*texto*/
+footer .texto{
+    position: relative;
+    padding: 0 0 2em 0;
+    text-align: center;
+}
+
+footer .texto p{
+    font-size: 20px;
+    color: whitesmoke;
+}
+/*texto*/
+
+/*rodape final*/

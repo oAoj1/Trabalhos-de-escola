@@ -1,0 +1,260 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Numans';
+}
+
+html,body{
+	height: 100%;
+}
+
+.clear{
+	clear: both;
+}
+
+.container{
+	max-width: 1200px;
+	text-align: center;
+}
+
+/* */
+
+header{
+	width: 100%;
+	height: auto;
+	border-bottom: 10px solid #32a852;
+	border-radius: 25px;
+}
+
+header a{
+	text-decoration: none;
+	font-size: 30px;
+}
+
+header .linklogo{
+	float: left;
+	margin-top: 50px;
+	margin-left: 20px;
+}
+
+header img{
+	border-radius: 30px;
+	height: inherit;
+	width: 250px;
+	margin-top: 10px;
+}	
+
+header img:hover{
+	background-color: #32a852;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+header .lazerlogo img{
+	margin-bottom: 20px;
+	margin-top: -150px;
+	margin-right: 50px;
+	float: right;
+	height: inherit	;
+}
+
+header .lazerlogo img:hover{
+	cursor: auto;
+}
+
+header .lazerlogo h1{
+	border-top-left-radius:10px ;
+	border-bottom-left-radius: 10px;
+	border-top-right-radius:40px ;
+	border-bottom-right-radius: 40px;
+	width: 400px;
+	padding: 20px;
+	font-size: 50px;
+	margin-left: 30px;
+	margin-bottom: 30px;
+	margin-top: -100px;
+}
+
+header .lazerlogo h1:hover{
+	border-top-left-radius:20px ;
+	border-bottom-left-radius: 20px;
+	color: kwhite;
+	width: 500px;
+	background-color: #32a852;
+	transition: 0.6s;
+}
+
+/* */
+
+article{
+	margin-top: 30px;
+	width: 100%;
+	height: auto;
+}
+
+article h3{
+	margin: 2em 3em;
+	font-size: 30px;
+}
+
+article p{
+	margin-top: 60px;
+	margin-left: 50px;
+	text-align: left;
+	font-size: 25px;
+	color: #1b1b6b;
+}
+
+article .lazeres{
+	margin-left: 5%;
+}
+
+article .lugares1{
+	vertical-align: top;
+	border-radius: 10px;
+	margin-right: -4px;
+	display: inline-block;
+	width: 33.3%;
+}
+
+article .lugares1 img{
+	border: 1px solid black;
+	border-radius: 20px;
+	margin:1em 0  ;
+	width: 300px;
+}
+
+article .lugares1 h2{
+	padding: 10px;
+	text-align: center;
+}
+
+
+article .lugares1 p{
+	padding: 10px;
+	margin: 0 30px;
+	text-align: left;
+	color: rgb(15, 64, 28);
+}
+
+/* */
+
+footer{
+	border-top: 5px solid #260bd6;
+	margin-top: 100px;
+	width: 100%;
+	height: auto;
+	background-color: #190d61;
+	padding: 20px;
+}
+
+footer p{
+	margin-top: -50px;
+	float: right;
+	color: #ccc;
+	font-size: 20px;
+	text-align: right;
+}
+
+footer .rrlogo img{
+	border-radius: 100px;
+	margin: 10px 20px;
+	float: left;
+	height: inherit;
+	width: 100px;
+}
+
+footer .rrlogo img:hover{
+	padding: 10px;
+	transition: 1s;
+	background-color: #260bd6;
+}
+
+footer .socialmedias{
+	display: inline-block;
+	height: inherit;
+	width: 300px;
+	margin-top: -5em;
+}
+
+footer .socialmedias img{
+	display: inline-block;
+	width: 50px;
+	margin: 12px;
+}
+
+footer .insta,.face,.twitter{
+	padding: 10px;
+	display: inline-block;
+	border-radius: 50px;
+}
+
+footer .insta:hover{
+	transition: 0.5s;
+	background-image: linear-gradient(#2121b8,#c714a3,#edc92b);
+}
+
+footer .twitter:hover{
+	transition: 0.5s;
+	background-color:#0694d1 ;
+}
+
+footer .face:hover{
+	transition: 0.5s;
+	background-color: #2121b8;
+}
+
+/* */
+
+@media only screen and (max-width: 1330px){
+
+	header .linklogo{
+		margin: 0;
+		width: 	100%;
+	}
+
+	header .lazerlogo h1{
+		margin:1em auto ;	
+	}
+
+	header .lazerlogo img{
+		float: none;
+		margin: 2em auto;
+	}
+
+
+	/* */
+
+	article .lugares1{
+		display: block;
+		margin: 3em auto;
+		width: 100%;
+	}
+
+	article .lugares1 img{
+		border: 1px solid black;
+		margin: 0 auto;
+	}
+
+	/* */
+
+	footer{
+		width: 100%;
+	}
+
+	footer .rrlogo{
+		display: inline-block;
+		margin: 3em auto;
+	}
+
+	footer .socialmedias{
+		margin: 0 auto;
+		margin-top: -3em;
+	}
+
+	footer p{
+		display: none;
+	}
+
+}

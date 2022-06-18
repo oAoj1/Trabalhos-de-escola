@@ -1,0 +1,203 @@
+*{
+	margin:0 ;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Numans';
+}
+
+html,body{
+	height: 100%;
+}
+
+.clear{
+	clear: both;
+}
+
+.container{
+	max-width: 1200px;
+	text-align: center;
+}
+
+/* */
+
+header{
+	padding-bottom: 20px;
+	width: 100%;
+	height: auto;
+	border-bottom: 10px solid #2c2c85;
+	border-radius: 25px;
+}
+
+header a{
+	text-decoration: none;
+	font-size: 30px;
+}
+
+header .linklogo{
+	width: auto;
+	float: left;
+	margin-left: 20px;
+}
+
+header .links{
+	margin: 5% auto;
+	float: right;
+}
+
+header .links a{
+	color: black;
+	padding:0 50px;
+}
+
+header .links a:hover{
+	color: #a81313;
+	transition: 0.3s;
+}
+
+header img{
+	border-radius: 30px;
+	height: inherit;
+	width: 250px;
+	margin-top: 10px;
+}	
+
+header img:hover{
+	background-color: #260bd6;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+/* */
+
+article{
+	width: 100%;
+	height: auto;
+}
+
+article h2{
+	font-size: 25px;
+	margin: 2em 1em;
+}
+
+article video{
+	width: 60em;
+	height: 30em;
+}
+
+/* */
+
+footer{
+	border-top: 5px solid #260bd6;
+	margin-top: 100px;
+	width: 100%;
+	height: auto;
+	background-color: #190d61;
+	padding: 20px;
+}
+
+footer p{
+	margin-top: -50px;
+	float: right;
+	color: #ccc;
+	font-size: 20px;
+	text-align: right;
+}
+
+footer .rrlogo img{
+	border-radius: 100px;
+	margin: 10px 20px;
+	float: left;
+	height: inherit;
+	width: 100px;
+}
+
+footer .rrlogo img:hover{
+	padding: 10px;
+	transition: 1s;
+	background-color: #260bd6;
+}
+
+footer .socialmedias{
+	display: inline-block;
+	height: inherit;
+	width: 300px;
+	margin-top: -5em;
+}
+
+footer .socialmedias img{
+	display: inline-block;
+	width: 50px;
+	margin: 12px;
+}
+
+footer .insta,.face,.twitter{
+	padding: 10px;
+	display: inline-block;
+	border-radius: 50px;
+	transition: all 0.5s ease;
+}
+
+footer .insta:hover{
+	-webkit-transition: background 0.5s linear;
+	-moz-transition: background 0.5s linear;
+	-o-transition: background 0.5s linear;
+	transition: background 0.5s linear;
+}
+
+footer .insta:hover{
+	transition:  transition: background 0.5s linear;
+	background-color: #b130b8;
+}
+
+footer .twitter:hover{
+	transition: 0.5s;
+	background:#4f85db ;
+}
+
+footer .face:hover{
+	transition: 0.5s;
+	background-color: #2121b8;
+}
+
+/* */
+
+@media only screen and (max-width: 1330px){
+
+	header .linklogo{
+		margin: 0;
+		width: 	100%;
+	}
+
+	header .links{
+		text-align:center;
+		width: 100%;
+	}
+
+	/* */
+	
+	article video{
+		width: 100%;
+		padding: 0 2em;
+	}
+
+	/* */
+
+	footer{
+		width: 100%;
+	}
+
+	footer .rrlogo{
+		display: inline-block;
+		margin: 3em auto;
+	}
+
+	footer .socialmedias{
+		margin: 0 auto;
+		margin-top: -3em;
+	}
+
+	footer p{
+		display: none;
+	}
+
+}
