@@ -5,6 +5,11 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Anonymous Pro','Bowlby One',Arial, Helvetica, sans-serif;
+    list-style-type: none;
+}
+
+html,body{
+    height: 100%;
 }
 
 header{
@@ -12,7 +17,6 @@ header{
     height: auto;
     position: relative;
     background-image: linear-gradient(to right,black,grey);
-    list-style: none;
 }
 
 .logo-header{
@@ -115,6 +119,7 @@ main .historia p{
 }
 
 main .historia a{
+    margin-top: 12px;
     display: flex;
     justify-content: center;
     align-self: center;
@@ -151,24 +156,57 @@ section{
 
 section .principal{
     margin: 5em 0 0 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
-section .logo-section{
-    max-width: 800px;
-    background-color: red;
+section .titulo-section{
+   margin:2em 0 2em  0;
+   text-align:center;
 }
 
-section .logo-section h1{
+section .titulo-section h1{
+    font-size: 5em;
+    text-transform: uppercase;
+}
+
+section .suspeitos{
+    margin:2em 0 2em 2em;
+}
+
+section  .suspeitos .envolvidos{
+    margin: 2em;
+    max-height: 1000px;
+    display: inline-block;
+}
+
+section .suspeitos .envolvidos .nome{
+    width: max-content;
+    margin: 1em 0 0.5em 0;
+}
+
+section .suspeitos .envolvidos .nome h1{
     text-transform: uppercase;
     font-size: 3em;
+    color: grey;
 }
 
-section .logo-section img{
-    width: 300px;
+section .suspeitos .envolvidos .dados{
+    width: max-content;
+    margin: 1em 0 0.5em 0;
+}
+
+section .suspeitos .envolvidos .dados p{
+    font-size: 1.2em;
+}
+
+section .suspeitos .envolvidos .foto{
+    width: max-content;
+}
+
+section .suspeitos .envolvidos .foto img{
+    border: 2px solid black;
+    width: 200px;
     height: 300px;
+    border-radius: 10px;
 }
 
 footer{
