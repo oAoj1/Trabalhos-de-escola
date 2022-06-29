@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Bowlby+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Anonymous Pro','Bowlby One',Arial, Helvetica, sans-serif;
+}
+
+header{
+    width: 100%;
+    height: auto;
+    position: relative;
+    background-image: linear-gradient(to right,black,grey);
+    list-style: none;
+}
+
+.logo-header{
+    width: max-content;
+    position: relative;
+    left:9em;
+    top: 2em;
+}
+
+.logo-header img{
+    width: 150px;
+    height: 150px;
+}
+
+.titulo-header{
+    bottom: 4em;
+    left: 6em ;
+    margin: auto;
+    max-width: 800px;
+    position: relative;
+}
+
+.titulo-header h1{
+    font-family: 'Bowlby One';
+    font-size: 3em;
+    text-transform: uppercase;
+    color: whitesmoke;
+    font-weight: normal;
+}
+
+.titulo-header h1:hover{
+    transition: 0.5s;
+    color: red;
+}
+
+main{
+    margin: 2em 0 2em 0;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+main .sobre{
+    margin: auto;
+    padding: 1em;
+    margin-left: 1em;
+    width: max-content;
+    max-width: 50%;
+    height: auto;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+main .sobre h1{
+    text-transform: uppercase;
+    font-size: 3em;
+    text-align: center;
+}
+
+main .sobre p{
+    margin: 1em;
+    font-size: 1.4em;
+}
+
+main .sobre .img-sobre{
+    margin: 0 0 2em 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .sobre .img-sobre img{
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+
+main .historia{
+    margin: auto;
+    padding: 1em;
+    width: max-content;
+    max-width: 40%;
+    height: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+main .historia h1{
+    text-transform: uppercase;
+    font-size: 3em;
+    text-align: center;
+}
+
+main .historia p{
+    margin: 1em;
+    font-size: 1.4em;
+}
+
+main .historia a{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    text-decoration: none;
+    color: red;
+    font-size: 2em;
+}
+
+main .historia a:hover{
+    color: darkred;
+    transition: 0.5s;
+}
+
+main .historia .img-historia{
+    margin: 0 0 2em 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .historia .img-historia img{
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+section{
+    margin: 5em 0 0 0;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+section .principal{
+    margin: 5em 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section .logo-section{
+    max-width: 800px;
+    background-color: red;
+}
+
+section .logo-section h1{
+    text-transform: uppercase;
+    font-size: 3em;
+}
+
+section .logo-section img{
+    width: 300px;
+    height: 300px;
+}
+
+footer{
+    background-image:linear-gradient(to right,black,#272424 ) ;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+footer .logo-footer{
+    position: relative;
+    left: 2em;
+    top: 1em;
+    width: max-content;
+}
+
+footer .texto{
+    margin: auto;
+    width: max-content;
+    position: relative;
+    bottom: 4em;
+}
+
+footer .texto p{
+    color: whitesmoke;
+    font-size: 2em;
+}
