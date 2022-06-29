@@ -169,12 +169,15 @@ section .titulo-section h1{
 }
 
 section .suspeitos{
-    margin:2em 0 2em 2em;
+    max-width: 1400px;
+    margin:auto;
 }
 
 section  .suspeitos .envolvidos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 2em;
-    max-height: 1000px;
     display: inline-block;
 }
 
