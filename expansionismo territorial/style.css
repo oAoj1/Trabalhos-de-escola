@@ -30,6 +30,30 @@ html,body{
     --b:#ffffff;
     --b2:#e0dede;
     --p:#000000;
+    --p2:#1a1a1a;
+    --c:#b8b4b4;
+}
+
+/* */
+
+.socialmedia{
+    width: 100%;
+    position: relative;
+    background-color: var(--p2);
+}
+
+.insta{
+    padding: 0.5em 0.2em;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+    color: var(--p);
+}
+
+.insta:hover{
+    color: var(--b2);
+    transform: scale(1.1);
 }
 
 /* */
@@ -114,19 +138,9 @@ nav li:hover{
     filter: drop-shadow(3px 2px 10px var(--b2));
 }
 
-.flecha{
-    width: 20px;
-    height: 20px;
-    cursor: pointer;
-    position: relative;
-    left: 3em;
-    color: var(--b2);
-}
-
 .fechar{
-    width: 25px;
-    height: 25px;
-    margin: 1em;
+    width: 35px;
+    height: 35px;
     transition: 0.2s;
     cursor: pointer;
 }
@@ -136,32 +150,193 @@ nav li:hover{
     transform: scale(1.2);
 }
 
-#res_exp,#res_rev,#res_gue{
-    padding: 0 1em 3em 1em;
+#res_rev,#res_gue{
+    padding: 2em;
     display: none;
     width: 100%;
-    height: 100%;
-    background-color: var(--b2);
+    max-width: max-content;
+    margin: auto;
+    background:linear-gradient(to right, var(--b2),var(--c));
+    border-radius: 10px;
+    border: 2px solid var(--p2);
 }
 
-#res_exp.ativar,#res_rev.ativar,#res_gue.ativar{
+.texto{
+    padding: 2em;
+    width: 100%;
+    max-width: max-content;
+    margin: auto;
+}
+
+#res_rev.ativar,#res_gue.ativar{
     display: block;
 }
 
-#res_exp h2,#res_rev h2,#res_gue h2{
+#res_rev h2,#res_gue h2{
+    padding: 0.2em 0 0.5em 0;
     text-transform: uppercase;
     font-size: 3em;
     text-align: center;
-    position: relative;
-    bottom: 0.3em;
     max-width: max-content;
     margin: auto;
+    font-family:'Plus Jakarta Sans';
+    filter: drop-shadow(2px 3px 10px var(--p2));
+}
+
+.russia{
+    margin:2em auto;
+    display: flex;
+}
+
+.guerra{
+    margin:2em auto;
+    display: flex;
+}
+
+#res_rev ul, #res_gue ul{
+    padding: 1em 0;
+    margin: auto;
+    max-width: max-content;
+    width: 100%;
+}
+
+#res_rev li, #res_gue li{
+    font-size: 2em;
     font-family:'Plus Jakarta Sans' ;
 }
 
-#res_exp p,#res_rev p,#res_gue p{
-    font-size: 2em;
-    font-family:'Plus Jakarta Sans' ;
+.times-content{
+    display: flex;
+}
+
+.times{
+    margin: auto;
+    display: flex;
+    max-width: 100px;
+}
+
+#francisco{
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#vladimir{
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.saiba{
+    font-size: 0.5em;
+    text-align: right;
+}
+
+#res_fran{
+    display: none;
+    background-color: var(--p);
+    color: var(--b);
+    padding: 2em;
+    width: 100%;
+    max-width: max-content;
+    border-radius: 10px;
+    position: absolute;
+    left: 64%;
+}
+
+.fechar-fran{
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    width: 30px;
+    height: 30px;
+    transform: 0.3s;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.fechar-fran:hover{
+    transform: scale(1.2);
+    color: var(--v);
+}
+
+#res_fran.ativar{
+    display: block;
+}
+
+#res_fran img{
+    border-radius: 10px;
+}
+
+#res_fran li{
+    font-size: 1.2em;
+    text-align: left;
+}
+
+.flecha{
+    color: var(--p);
+    position: relative;
+    right: 8.5em;
+    width: 40px;
+    height: 40px;
+}
+
+/* */
+
+#res_vlad{
+    display: none;
+    background-color: var(--p);
+    color: var(--b);
+    padding: 2em;
+    width: 100%;
+    max-width: max-content;
+    border-radius: 10px;
+    position: absolute;
+    left: 62%;
+}
+
+.fechar-vlad{
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    width: 30px;
+    height: 30px;
+    transform: 0.3s;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.fechar-vlad:hover{
+    transform: scale(1.2);
+    color: var(--v);
+}
+
+#res_vlad.ativar{
+    display: block;
+}
+
+#res_vlad img{
+    border-radius: 10px;
+}
+
+#res_vlad li{
+    font-size: 1.2em;
+    text-align: left;
+}
+
+.flecha{
+    color: var(--p);
+    position: relative;
+    right: 8.5em;
+    width: 40px;
+    height: 40px;
+}
+
+.flecha-vlad{
+    color: var(--p);
+    position: relative;
+    right: 4em;
+    bottom: 3.4em;
+    width: 40px;
+    height: 40px;
 }
 
 /* */
@@ -172,8 +347,12 @@ section{
     position: relative;
 }
 
+
+
+/* */
+
 footer{
     width: 100%;
-    height: 100%;
     position: relative;
+    background:linear-gradient(to right, var(--p),var(--p2));
 }
