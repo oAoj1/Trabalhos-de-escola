@@ -48,12 +48,11 @@ html,body{
     height: 30px;
     cursor: pointer;
     transition: 0.3s;
-    color: var(--p);
+    color: var(--b2);
 }
 
 .insta:hover{
-    color: var(--b2);
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 
 /* */
@@ -150,7 +149,7 @@ nav li:hover{
     transform: scale(1.2);
 }
 
-#res_rev,#res_gue{
+#res_gue{
     padding: 2em;
     display: none;
     width: 100%;
@@ -168,11 +167,11 @@ nav li:hover{
     margin: auto;
 }
 
-#res_rev.ativar,#res_gue.ativar{
+#res_gue.ativar{
     display: block;
 }
 
-#res_rev h2,#res_gue h2{
+#res_gue h2{
     padding: 0.2em 0 0.5em 0;
     text-transform: uppercase;
     font-size: 3em;
@@ -183,24 +182,19 @@ nav li:hover{
     filter: drop-shadow(2px 3px 10px var(--p2));
 }
 
-.russia{
-    margin:2em auto;
-    display: flex;
-}
-
 .guerra{
     margin:2em auto;
     display: flex;
 }
 
-#res_rev ul, #res_gue ul{
+#res_gue ul{
     padding: 1em 0;
     margin: auto;
     max-width: max-content;
     width: 100%;
 }
 
-#res_rev li, #res_gue li{
+#res_gue li{
     font-size: 2em;
     font-family:'Plus Jakarta Sans' ;
 }
@@ -220,11 +214,6 @@ nav li:hover{
     cursor: pointer;
 }
 
-#vladimir{
-    transition: 0.3s;
-    cursor: pointer;
-}
-
 .saiba{
     font-size: 0.5em;
     text-align: right;
@@ -232,7 +221,7 @@ nav li:hover{
 
 #res_fran{
     display: none;
-    background-color: var(--p);
+    background: linear-gradient(var(--p),var(--p2));
     color: var(--b);
     padding: 2em;
     width: 100%;
@@ -281,66 +270,6 @@ nav li:hover{
 
 /* */
 
-#res_vlad{
-    display: none;
-    background-color: var(--p);
-    color: var(--b);
-    padding: 2em;
-    width: 100%;
-    max-width: max-content;
-    border-radius: 10px;
-    position: absolute;
-    left: 62%;
-}
-
-.fechar-vlad{
-    position: absolute;
-    top: 1em;
-    left: 1em;
-    width: 30px;
-    height: 30px;
-    transform: 0.3s;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.fechar-vlad:hover{
-    transform: scale(1.2);
-    color: var(--v);
-}
-
-#res_vlad.ativar{
-    display: block;
-}
-
-#res_vlad img{
-    border-radius: 10px;
-}
-
-#res_vlad li{
-    font-size: 1.2em;
-    text-align: left;
-}
-
-.flecha{
-    color: var(--p);
-    position: relative;
-    right: 8.5em;
-    width: 40px;
-    height: 40px;
-}
-
-.flecha-vlad{
-    color: var(--p);
-    position: relative;
-    right: 4em;
-    bottom: 3.4em;
-    width: 40px;
-    height: 40px;
-}
-
-/* */
-
 section{
     width: 100%;
     height: 100%;
@@ -351,8 +280,94 @@ section{
 
 /* */
 
+.estudantes{
+    color: var(--b);
+    background:linear-gradient(to right, var(--p),var(--p2));
+    width: 50%;
+    position: relative;
+    padding: 2em 0;
+}
+
+.estudantes h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2.5em;
+    padding: 0.5em;
+}
+
+.funcoes{
+    display: flex;
+    width: 100%;
+    max-width: max-content;
+    margin: auto;
+}
+
+.icone{
+    width: 40px;
+    height: 40px;
+}
+
+.alunos{
+    padding: 0.5em 1em;
+    display: block;
+}
+
+.alunos h3{
+    font-size: 1.5em;
+    text-transform: capitalize;
+}
+
+.alunos span{
+    text-transform: capitalize;
+    font-size: 1.5em;
+    font-family: 'Plus Jakarta Sans';
+}
+
+.sobre{
+    color: var(--b);
+    background:linear-gradient(to left, var(--v2),var(--p2));
+    width: 50%;
+    position: relative;
+    padding: 2em 0;
+}
+
+.sobre h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2.5em;
+}
+
+
+.sobre p{
+    padding: 1em 0;
+    font-size: 1.5em;
+    width: 100%;
+    max-width: 400px;
+    text-align: left;
+    margin: auto;
+    font-family: 'Plus Jakarta Sans';
+}
+
+/* */
+
 footer{
     width: 100%;
     position: relative;
-    background:linear-gradient(to right, var(--p),var(--p2));
+    background-color: var(--p);
+}
+
+.copy{
+    text-align: center;
+    padding: 1em 0;
+}
+
+.copy span{
+    font-size: 1.2em;
+    color: var(--b2);
+    font-weight: 300;
+    font-family: 'Plus Jakarta Sans';
+}
+
+.socialmedia-f{
+    padding: 0 1em;
 }
