@@ -11,10 +11,10 @@ REVOLUCAO
 A Revolução Russa de 1917 foi um período de conflitos, iniciado em 1917, que derrubou a monarquia russa e levou ao poder o Partido Bolchevique, de Vladimir Lênin. Na Rússia, durante o século XIX, a falta de liberdade era quase absoluta.
 No campo, reinava uma forte tensão social, devido à grande concentração de terras na mão da nobreza. A Rússia foi o último país a abolir a servidão, em 1861 e em muitos lugares, continuava-se com o sistema de produção feudal.
 
-.inicio dos conflitos em 1917
-.queda da monarquia
 .comando de Vladimir lenin
-.falta de liberdade
+.inicio dos conflitos em 1917
+.queda da monarquia no pais
+.falta de liberdade do povo
 .tensao social(terras tomada pela nobreza)
 .ultimo pais abolir servidao
 

@@ -149,7 +149,7 @@ nav li:hover{
     transform: scale(1.2);
 }
 
-#res_gue{
+#res_gue,#res_rev{
     padding: 2em;
     display: none;
     width: 100%;
@@ -167,11 +167,11 @@ nav li:hover{
     margin: auto;
 }
 
-#res_gue.ativar{
+#res_gue.ativar,#res_rev.ativar{
     display: block;
 }
 
-#res_gue h2{
+#res_gue h2,#res_rev h2{
     padding: 0.2em 0 0.5em 0;
     text-transform: uppercase;
     font-size: 3em;
@@ -187,14 +187,14 @@ nav li:hover{
     display: flex;
 }
 
-#res_gue ul{
+#res_gue ul,#res_rev ul{
     padding: 1em 0;
     margin: auto;
     max-width: max-content;
     width: 100%;
 }
 
-#res_gue li{
+#res_gue li,#res_rev li{
     font-size: 2em;
     font-family:'Plus Jakarta Sans' ;
 }
@@ -209,7 +209,7 @@ nav li:hover{
     max-width: 100px;
 }
 
-#francisco{
+#francisco,#vladimir{
     transition: 0.3s;
     cursor: pointer;
 }
@@ -219,7 +219,7 @@ nav li:hover{
     text-align: right;
 }
 
-#res_fran{
+#res_fran,#res_vlad{
     display: none;
     background: linear-gradient(var(--p),var(--p2));
     color: var(--b);
@@ -231,7 +231,7 @@ nav li:hover{
     left: 64%;
 }
 
-.fechar-fran{
+.fechar-fran,.fechar-vlad{
     position: absolute;
     top: 1em;
     left: 1em;
@@ -242,20 +242,20 @@ nav li:hover{
     transition: 0.3s;
 }
 
-.fechar-fran:hover{
+.fechar-fran:hover,.fechar-vlad:hover{
     transform: scale(1.2);
     color: var(--v);
 }
 
-#res_fran.ativar{
+#res_fran.ativar,#res_vlad.ativar{
     display: block;
 }
 
-#res_fran img{
+#res_fran img,#res_vlad img{
     border-radius: 10px;
 }
 
-#res_fran li{
+#res_fran li,#res_vlad li{
     font-size: 1.2em;
     text-align: left;
 }
@@ -272,13 +272,96 @@ nav li:hover{
 
 section{
     width: 100%;
-    height: 100%;
     position: relative;
+    margin: 2em 0;
 }
 
+.temas{
+    position: relative;
+    margin: 2em 0;
+    width: 100%;
+}
 
+.temas h2{
+    text-align: left;
+    max-width: max-content;
+    font-size: 2em;
+}
+
+.temas ul{ 
+    padding: 0.5em 0;
+}
+
+.temas li{
+    font-family: 'Plus Jakarta Sans';
+    display: grid;
+    font-size:1.5em;
+    text-align: left;
+}
+
+.exp{
+    width: 100%;
+    padding: 0 2em;
+    display: grid;
+}
+
+.gue_mov{
+    width: 100%;
+    padding: 1em 2em;
+    display: grid;
+}
+
+.plano{
+    width: 100%;
+    padding: 1em 2em;
+    display: grid;
+}
+
+.plano h3{
+    margin-top: 1em;
+    font-size: 1.2em;
+}
+
+.trincheiras li{
+    font-size: 1.1em;
+}
+
+.fontes{
+    z-index: 2;
+    position: relative;
+    bottom: 2em;
+    left: 2em;
+    max-width: max-content;
+}
+
+.fontes a{
+    font-size: 1.5em;
+    color: var(--p2);
+}
 
 /* */
+
+footer{
+    width: 100%;
+    position: relative;
+    background-color: var(--p);
+}
+
+.copy{
+    text-align: center;
+    padding: 1em 0;
+}
+
+.copy span{
+    font-size: 1.2em;
+    color: var(--b2);
+    font-weight: 300;
+    font-family: 'Plus Jakarta Sans';
+}
+
+.socialmedia-f{
+    padding: 0 1em;
+}
 
 .estudantes{
     color: var(--b);
@@ -319,7 +402,7 @@ section{
 
 .alunos span{
     text-transform: capitalize;
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-family: 'Plus Jakarta Sans';
 }
 
@@ -337,7 +420,6 @@ section{
     font-size: 2.5em;
 }
 
-
 .sobre p{
     padding: 1em 0;
     font-size: 1.5em;
@@ -346,28 +428,4 @@ section{
     text-align: left;
     margin: auto;
     font-family: 'Plus Jakarta Sans';
-}
-
-/* */
-
-footer{
-    width: 100%;
-    position: relative;
-    background-color: var(--p);
-}
-
-.copy{
-    text-align: center;
-    padding: 1em 0;
-}
-
-.copy span{
-    font-size: 1.2em;
-    color: var(--b2);
-    font-weight: 300;
-    font-family: 'Plus Jakarta Sans';
-}
-
-.socialmedia-f{
-    padding: 0 1em;
 }
