@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&family=Slabo+13px&display=swap');
 
 *{
     margin:0;
     padding: 0;
     box-sizing: 0;
-    font-family: 'Quicksand',Arial, Helvetica, sans-serif;
+    font-family: 'Quicksand','Slabo 13px',Arial, Helvetica, sans-serif;
 }
 
 html,body{
@@ -13,11 +13,15 @@ html,body{
 }
 
 :root{
-    --v1:#00ffa6;
-    --a1:#007bff;
+    --v1c:#00ffa6;
+    --v1e:#04774f;
+    --v2c:#3CF22C;
+    --v2e:#268d1d;
+    --a1c:#007bff;
+    --a1e:#023770;
 }
 
-header,section,main,footer{
+header,section,footer{
     width: 100%;
     height: auto;
     position: relative;
@@ -27,4 +31,35 @@ li{
     list-style-type: none;
 }
 
+.container{
+    width: 100%;
+    max-width: 1300px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: auto;
+    text-align: center;
+}
+
 /* */
+
+header{
+    background:linear-gradient(to left,var(--v1c),var(--a1c));
+}
+
+.logo-header{
+    padding: 2em 4em;
+    display: flex;
+    align-items: center;
+}
+
+.logo-header img{
+    max-width: 200px;
+}
+
+.logo-header h1{
+    margin-left: 0.2em;
+    font-size: 5em;
+    font-family: 'Slabo 13px';
+}
+
