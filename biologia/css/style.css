@@ -31,6 +31,7 @@ html,body{
     --m1:#553720;
     --m2:#3a352f;
     --m3:#39282b;
+    --red:#dc143c;
     --b1:#fff;
     --p1:#000;
 }
@@ -130,7 +131,138 @@ header{
 
 /*conteudo INCIO */
 
+.conteudo{
+    width: 100%;
+    max-width: max-content;
+    height: auto;
+    margin: 1em;
+    padding: 1em;
+    position: relative;
+}
 
+.conteudo .img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    padding: 0.5em;
+    margin: 1em;
+    background-color: var(--b1);
+    border:2px solid var(--v1c) ;
+    z-index: 2;
+}
+
+.conteudo h2{
+    background-color: #268d1d;
+    padding: 1em 1em 1em 2em;
+    margin-left: -2em;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    color: var(--b1);
+    font-size: 2em;
+}
+
+/* */
+
+.estudos-content{
+    width: 100%;
+    max-width: max-content;
+    display: flex;
+    margin:2em auto;
+    align-items: stretch;
+}
+
+.icon-img{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    margin: auto;
+    border-radius: 20px;
+    background-color: var(--v1c);
+}
+
+.estudos{
+    width: 100%;
+    max-width: 400px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+}
+
+.estudos h2{
+    margin: 1em auto;
+    padding: 0 1em;
+    font-size: 2em;
+    cursor: pointer;
+    transition: 0.4s;
+    color: var(--v1e);
+}
+
+.mais_oquesao,.mais_gerais{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.mais_oquesao.girar,.mais_gerais.girar{
+    transform: rotate(225deg);
+    color:var(--red) ;
+}
+
+#resultado_oquesao{
+    display: none;
+    width: 100%;
+    max-width: 400px;
+}
+
+#resultado_oquesao.ativar{
+    display: block;
+}
+
+#resultado_oquesao ul{
+    padding: 1em;
+}
+
+#resultado_oquesao ul li{
+    padding: 0.2em 0;
+    list-style-type: disc;
+    list-style-position: inside;
+    font-size: 1.5em;
+}
+
+#resultado_oquesao .clique{
+    cursor: pointer;
+    font-size: 0.6em;
+    font-style: italic;
+}
+
+.ordens{
+    cursor: pointer;
+}
+
+#resultado_ordens{
+    display: none;
+    width: 100%;
+    max-width: max-content;
+    position: absolute;
+    left: 31.5%;
+    bottom: 11.7em;
+    background-color: var(--p1);
+    color: var(--b1);
+    border-radius: 30px;
+}
+
+#resultado_ordens .flecha{
+    position: absolute;
+    top: 50%;
+    left: -15%;
+    color:var(--p1) ;
+    width: 40px;
+    height: 40px;
+}
+
+#resultado_ordens.ativar{
+    display: block;
+}
 
 /*conteudo FINAL */
 
