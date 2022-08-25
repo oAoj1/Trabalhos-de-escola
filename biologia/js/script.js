@@ -84,30 +84,45 @@ botao_form.addEventListener('click',enviar)
 
 function enviar(){
     event.preventDefault()
-    var animais = a.value.toLowerCase()
+    var animais = a.value.toLowerCase().replaceAll(' ', '')
+    var img = Puxar_um('#img-animal')
 
     var lista_animais = {
         axolote:'axolote',
-        sapo:'sapo',
-        ra:'rã',
+        sapo:'sapo-boi',
+        ra:'ra',
         salamandra:'salamandra',
         cobra_cega:'cobra-cega',
     }
 
     if(animais.length == 0){
-        alert('Coloque um valor')
+        resultado_animais.innerHTML = '<p class="insert">Insira um valor</p>'
+        img.src = ''
+        img.classList.remove('img-axolote','img-sapo','img-ra','img-salamandra','img-cobra-cega')
     }else if(animais == lista_animais.axolote){
-        alert('axolote')
+        res_animal('Urodela (Caudata)','Ambystomidae','Ambyostoma','Ambyostoma mexicanum','Ambientes escuros e de água doce','Girinos e pequenos invertebrados (insetos, crustáceos e minhocas)')
+        img.src = 'imagens/animais/axolote.jpg'
+        img.classList.add('img-axolote')
     }else if(animais == lista_animais.sapo){
-        alert('sapo')
+        res_animal('Anura','Bufonidae','Rhinella','R. marinaa','Locais úmidos, como brejos, riachos, lagoas e igarapés','Aranhas, besouros, pequenos gafanhotos, moscas, formigas e cupins. Espécies maiores podem comer pequenos pássaros e até outros sapos')
+        img.src = 'imagens/animais/sapo.webp'
+        img.classList.add('img-sapo')
     }else if(animais == lista_animais.ra){
-        alert('ra')
+        res_animal('Anura','Ranidae','','','Vivem perto de corpos d`água, lagos, lagoas, cachoeiras e pântanos','Pequenos artrópodes, insetos, vermes e outros animais')
+        img.src = 'imagens/animais/ra.jpg'
+        img.classList.add('img-ra')
     }else if(animais == lista_animais.salamandra){
-        alert('salamandra')
+        res_animal('Urodela','','','','Algumas espécies vivem em cavernas; temperatura e umidade constantes favorecem o habitat das espécies','Pequenos animais, como insetos, larvas de outros animais, crustáceos, pequenos peixes, entre outros.')
+        img.src = 'imagens/animais/salamandra.jpg'
+        img.classList.add('img-salamandra')
     }else if(animais == lista_animais.cobra_cega){
-        alert('cobra cega')
+        res_animal('Gymnophiona','','','','vivem enterrados (hábito fossorial) ou na superfície de solos úmidos','Vivem enterrados (hábito fossorial) ou na superfície de solos úmidos','Pequenos invertebrados')
+        img.src = 'imagens/animais/cobra-cega.webp'
+        img.classList.add('img-cobra-cega')
     }else{
-        alert('valor invalido, ou escrito errado')
+        resultado_animais.innerHTML = '<p class="error">Animal não listado, ou valor inexistente ou incorreto</p>'
+        img.src = ''
+        img.classList.remove('img-axolote','img-sapo','img-ra','img-salamandra','img-cobra-cega')
     }
 
     a.value = ''
@@ -118,15 +133,15 @@ function enviar(){
 
 function res_animal(ordem,familia,genero,especie,habitat,alimentacao){
     return resultado_animais.innerHTML = `
-    <ul>
-        <li>Reino: Animalia</li>
-        <li>Filo: Chordata</li>
-        <li>Classe: Amphibia</li>
-        <li>Ordem: ${ordem}</li>
-        <li>Familia: ${familia}</li>
-        <li>Gênero: ${genero}</li>
-        <li>Espécie: ${especie}</li>
-        <li>Alimentação: ${alimentacao}</li>
-        <li>Habitat: ${habitat}</li>
-    </ul>` 
+    <ul class="resultado-lista-animais">
+        <li><strong>Reino:</strong> Animalia</li>
+        <li><strong>Filo:</strong> Chordata</li>
+        <li><strong>Classe:</strong> Amphibia</li>
+        <li><strong>Ordem:</strong> ${ordem}</li>
+        <li><strong>Familia:</strong> ${familia}</li>
+        <li><strong>Gênero:</strong> ${genero}</li>
+        <li><strong>Espécie:</strong> ${especie}</li>
+        <li><strong>Habitat:</strong> ${habitat}</li>
+        <li><strong>Alimentação:</strong> ${alimentacao}</li>  
+    </ul>`
 }
