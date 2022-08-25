@@ -419,6 +419,11 @@ header{
     color: var(--red);
 }
 
+.dica{
+    margin-top: 0.7em;
+    font-size: 1.5em;
+}
+
 .insert{
     color: var(--p1);
 }
@@ -427,8 +432,8 @@ header{
     display: flex;
     justify-content: center;
     border-radius: 30px;
-    border: 1px solid var(--v1c);
-    margin: 2em 0;
+    border: 0;
+    margin: 2em 0 1em 0;
 }
 
 .img-axolote{
@@ -448,12 +453,17 @@ header{
 
 .img-salamandra{
     width: 600px;
-    height: 380;
+    height: 380px;
 }
 
 .img-cobra-cega{
     width:500px ;
     height:300px ;
+}
+
+#titulo-animal{
+    margin: 0.1em 0 0.3em 0;
+    font-size: 4em;
 }
 
 /* */
