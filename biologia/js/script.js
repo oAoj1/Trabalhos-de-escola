@@ -90,10 +90,10 @@ function enviar(){
 
     var lista_animais = {
         axolote:'axolote',
-        sapo:'sapo-boi',
-        ra:'ra',
+        sapo:['sapo-boi','sapoboi'],
+        ra:['ra','rã'],
         salamandra:'salamandra',
-        cobra_cega:'cobra-cega',
+        cobra_cega:['cobra-cega','cobracega'],
     }
 
     if(animais.length == 0){
@@ -105,23 +105,23 @@ function enviar(){
         titulo_animal.textContent = 'Axolote'
         img.src = 'imagens/animais/axolote.jpg'
         img.classList.add('img-axolote')
-    }else if(animais == lista_animais.sapo){
+    }else if(animais == lista_animais.sapo[0] || animais == lista_animais.sapo[1]){
         res_animal('Anura','Bufonidae','Rhinella','R. marinaa','Locais úmidos, como brejos, riachos, lagoas e igarapés','Aranhas, besouros, pequenos gafanhotos, moscas, formigas e cupins. Espécies maiores podem comer pequenos pássaros e até outros sapos')
         titulo_animal.textContent = 'Sapo-boi'
         img.src = 'imagens/animais/sapo.webp'
         img.classList.add('img-sapo')
-    }else if(animais == lista_animais.ra){
-        res_animal('Anura','Ranidae','','','Vivem perto de corpos d`água, lagos, lagoas, cachoeiras e pântanos','Pequenos artrópodes, insetos, vermes e outros animais')
+    }else if(animais == lista_animais.ra[0] || animais == lista_animais.ra[1]){
+        res_animal('Anura','Ranidae','Ranoidea','Agalychnis callidryas ','Vivem perto de corpos d`água, lagos, lagoas, cachoeiras e pântanos','Pequenos artrópodes, insetos, vermes e outros animais')
         titulo_animal.textContent = 'Rã'
         img.src = 'imagens/animais/ra.jpg'
         img.classList.add('img-ra')
     }else if(animais == lista_animais.salamandra){
-        res_animal('Urodela','','','','Algumas espécies vivem em cavernas; temperatura e umidade constantes favorecem o habitat das espécies','Pequenos animais, como insetos, larvas de outros animais, crustáceos, pequenos peixes, entre outros.')
+        res_animal('Urodela','Salamandridae','Salamandra','Salamandra salamandra','Algumas espécies vivem em cavernas; temperatura e umidade constantes favorecem o habitat das espécies','Pequenos animais, como insetos, larvas de outros animais, crustáceos, pequenos peixes, entre outros.')
         titulo_animal.textContent = 'Salamandra'
         img.src = 'imagens/animais/salamandra.jpg'
         img.classList.add('img-salamandra')
-    }else if(animais == lista_animais.cobra_cega){
-        res_animal('Gymnophiona','','','','vivem enterrados (hábito fossorial) ou na superfície de solos úmidos','Vivem enterrados (hábito fossorial) ou na superfície de solos úmidos','Pequenos invertebrados')
+    }else if(animais == lista_animais.cobra_cega[0] || animais == lista_animais.cobra_cega[1]){
+        res_animal('Gymnophiona','Typhlopidae','Lissanfíbio','Sinphonops annulatus','vivem enterrados (hábito fossorial) ou na superfície de solos úmidos','Vivem enterrados (hábito fossorial) ou na superfície de solos úmidos','Pequenos invertebrados')
         titulo_animal.textContent = 'Cobra-cega'
         img.src = 'imagens/animais/cobra-cega.webp'
         img.classList.add('img-cobra-cega')
@@ -130,8 +130,6 @@ function enviar(){
         resultado_animais.innerHTML += 
         `<ul class="dica">
             <li>Seu animal não é um anfibio</li>
-            <li>Faltou hífen na escrita (-)</li>
-            <li>Não precisa de acento nas palavras (~)</li> 
         </ul>`
         img.src = ''
         titulo_animal.textContent = ''
