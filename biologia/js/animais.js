@@ -1,16 +1,18 @@
-var formulario = Puxar_um('#formulario')
-var botao_form = Puxar_um('#botao-pesquisar')
-var resultado_animais = Puxar_um('#resultado_pesquisar')
-var a = Puxar_um('#txtanimal')
+var formulario = document.querySelector('#formulario')
+var botao_form = document.querySelector('#botao-pesquisar')
+var botao_limpar = document.querySelector('#limpar')
+var resultado_animais = document.querySelector('#resultado_pesquisar')
+var a = document.querySelector('#txtanimal')
 
+botao_limpar.addEventListener('click',remover)
 formulario.addEventListener('submit',enviar)
 botao_form.addEventListener('click',enviar)
 
 function enviar(){
     event.preventDefault()
     var animais = a.value.toLowerCase().replaceAll(' ', '')
-    var img = Puxar_um('#img-animal')
-    var titulo_animal = Puxar_um('#titulo-animal')
+    var img = document.querySelector('#img-animal')
+    var titulo_animal = document.querySelector('#titulo-animal')
 
     var lista_animais = {
         axolote:'axolote',
@@ -72,10 +74,11 @@ function enviar(){
         `<p class="error">
             Animal não listado, ou valor inexistente ou incorreto
         </p>`
-        
+
         resultado_animais.innerHTML += 
         `<ul class="dica">
             <li>Seu animal não é um anfibio</li>
+            <li>Sintaxe incorreta</li>
         </ul>`
 
         img.src = ''
@@ -83,11 +86,18 @@ function enviar(){
         img.classList.remove('img-axolote','img-sapo','img-ra','img-salamandra','img-cobra-cega')
 
     }
-
+    
     a.value = ''
     a.focus()
 
     return lista_animais
+
+}
+
+function remover(){
+    event.preventDefault()
+
+    resultado_animais.innerHTML = ''
 }
 
 function res_animal(ordem,familia,genero,especie,habitat,alimentacao){
