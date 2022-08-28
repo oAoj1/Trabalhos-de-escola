@@ -8,27 +8,27 @@ function ativar(objeto,resultado,girar=0){
 }
 
 /*resultados */
-var res_oquesao = document.querySelector('#resultado_oquesao')
-var res_ordens = document.querySelector('#resultado_ordens')
-var res_gerais = document.querySelector('#resultado_gerais')
-var res_respirar = document.querySelector('#resultado_respiracao')
-var res_digestao = document.querySelector('#resultado_digestao')
-var res_reproducao = document.querySelector('#resultado_reproducao')
+var res_oquesao = Puxar_um('#resultado_oquesao')
+var res_ordens = Puxar_um('#resultado_ordens')
+var res_gerais = Puxar_um('#resultado_gerais')
+var res_respirar = Puxar_um('#resultado_respiracao')
+var res_digestao = Puxar_um('#resultado_digestao')
+var res_reproducao = Puxar_um('#resultado_reproducao')
 
 /* plus*/
-var mais_gerais = document.querySelector('.mais_gerais')
-var mais_oquesao = document.querySelector('.mais_oquesao')
-var mais_respirar = document.querySelector('.mais_respiracao')
-var mais_digestao = document.querySelector('.mais_digestao')
-var mais_reproducao = document.querySelector('.mais_reproducao')
+var mais_gerais = Puxar_um('.mais_gerais')
+var mais_oquesao = Puxar_um('.mais_oquesao')
+var mais_respirar = Puxar_um('.mais_respiracao')
+var mais_digestao = Puxar_um('.mais_digestao')
+var mais_reproducao = Puxar_um('.mais_reproducao')
 
 /*itens */
-var ordens_lista = document.querySelector('.ordens')
-var oquesao = document.querySelector('#oquesao')
-var gerais = document.querySelector('#gerais')
-var respiracao = document.querySelector('#respiracao')
-var digestao =  document.querySelector('#digestao')
-var reproducao = document.querySelector('#reproducao')
+var ordens_lista = Puxar_um('.ordens')
+var oquesao = Puxar_um('#oquesao')
+var gerais = Puxar_um('#gerais')
+var respiracao = Puxar_um('#respiracao')
+var digestao =  Puxar_um('#digestao')
+var reproducao = Puxar_um('#reproducao')
 
 //colocando as FUNCOES
 var resultado_oquesao = ativar(oquesao,res_oquesao,mais_oquesao)

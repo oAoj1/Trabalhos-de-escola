@@ -401,27 +401,6 @@ header{
     filter: drop-shadow(12px 15px 10px var(--v2c));
 }
 
-#limpar{
-    border-radius: 20px;
-    outline: 0;
-    border: 1px solid var(--p1);
-    padding: 0.2em;
-    font-size: 2em;
-    width: 100%;
-    max-width: 150px;
-    transition: 0.4s;
-    background-color: var(--red);
-    cursor: pointer;
-    margin: 0.8em 0 1em 0.2em;
-}
-
-#limpar:hover{
-    transform: translateY(-10px);
-    color: var(--b1);
-    background-color:#7c1328 ;
-    filter: drop-shadow(12px 15px 10px var(--red));
-}
-
 #resultado_pesquisar{
     display: block;
     border-radius: 20px;
