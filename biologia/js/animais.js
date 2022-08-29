@@ -30,65 +30,31 @@ function enviar(){
     }else{
         if(animais == lista_animais.axolote){
 
-            res_animal(
-                'Urodela (Caudata)',
-                'Ambystomidae',
-                'Ambyostoma',
-                'Ambyostoma mexicanum',
-                'Ambientes escuros e de água doce',
-                'Girinos e pequenos invertebrados (insetos, crustáceos e minhocas)'
-            )
-            
+            res_animal(Axolote())
+
             dados_animais('Axolote','axolote.jpg','img-axolote')
-    
+
         }else if(animais == lista_animais.sapo[0] || animais == lista_animais.sapo[1]){
     
-            res_animal(
-                'Anura',
-                'Bufonidae',
-                'Rhinella',
-                'R. marinaa',
-                'Locais úmidos, como brejos, riachos, lagoas e igarapés',
-                'Aranhas, besouros, pequenos gafanhotos, moscas, formigas e cupins. Espécies maiores podem comer pequenos pássaros e até outros sapos'
-            )
+            res_animal(Sapo())
     
             dados_animais('Sapo-boi','sapo.webp','img-sapo')
     
         }else if(animais == lista_animais.ra[0] || animais == lista_animais.ra[1]){
     
-            res_animal(
-                'Anura',
-                'Ranidae',
-                'Ranoidea',
-                'Agalychnis callidryas ',
-                'Vivem perto de corpos d`água, lagos, lagoas, cachoeiras e pântanos',
-                'Pequenos artrópodes, insetos, vermes e outros animais'
-            )
+            res_animal(Ra())
     
             dados_animais('Rã','ra.jpg','img-ra')
     
         }else if(animais == lista_animais.salamandra){
     
-            res_animal(
-                'Urodela',
-                'Salamandridae',
-                'Salamandra','Salamandra salamandra',
-                'Algumas espécies vivem em cavernas; temperatura e umidade constantes favorecem o habitat das espécies',
-                'Pequenos animais, como insetos, larvas de outros animais, crustáceos, pequenos peixes, entre outros.'
-            )
+            res_animal(Salamandra())
     
             dados_animais('Salamandra','salamandra.jpg','img-salamandra')
     
         }else if(animais == lista_animais.cobra_cega[0] || animais == lista_animais.cobra_cega[1]){
     
-            res_animal(
-                'Gymnophiona',
-                'Typhlopidae',
-                'Lissanfíbio',
-                'Sinphonops annulatus',
-                'vivem enterrados (hábito fossorial) ou na superfície de solos úmidos','Vivem enterrados (hábito fossorial) ou na superfície de solos úmidos',
-                'Pequenos invertebrados'
-            )
+            res_animal(Cobra_cega())
     
             dados_animais('Cobra-cega','cobra-cega.webp','img-cobra-cega')
     
@@ -104,19 +70,9 @@ function enviar(){
 
 //FUNCOES
 
-function res_animal(ordem,familia,genero,especie,habitat,alimentacao){
-    return resultado_animais.innerHTML = `
-    <ul class="resultado-lista-animais">
-        <li><strong>Reino:</strong> Animalia</li>
-        <li><strong>Filo:</strong> Chordata</li>
-        <li><strong>Classe:</strong> Amphibia</li>
-        <li><strong>Ordem:</strong> ${ordem}</li>
-        <li><strong>Familia:</strong> ${familia}</li>
-        <li><strong>Gênero:</strong> ${genero}</li>
-        <li><strong>Espécie:</strong> ${especie}</li>
-        <li><strong>Habitat:</strong> ${habitat}</li>
-        <li><strong>Alimentação:</strong> ${alimentacao}</li>  
-    </ul>`
+
+function res_animal(animal){  
+    return animal
 }
 
 function dados_animais(titulo,imagem,classe_foto){
