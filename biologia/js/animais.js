@@ -22,137 +22,79 @@ function enviar(){
         cobra_cega:['cobra-cega','cobracega'],
     }
 
-    if(animais == lista_animais.axolote){
+    if(animais.length == 0){
+        resultado_animais.innerHTML = `<p class="insert">Insira um valor</p>`
+        img.src = ''
+        titulo_animal.innerHTML = ''
+        img.classList.remove('img-axolote','img-sapo','img-ra','img-salamandra','img-cobra-cega')
+    }else{
+        if(animais == lista_animais.axolote){
 
-        res_animal(
-            'Urodela (Caudata)',
-            'Ambystomidae',
-            'Ambyostoma',
-            'Ambyostoma mexicanum',
-            'Ambientes escuros e de água doce',
-            'Girinos e pequenos invertebrados (insetos, crustáceos e minhocas)'
-        )
-
-        dados_animais('Axolote','axolote.jpg','img-axolote')
-
-    }else if(animais == lista_animais.sapo[0] || animais == lista_animais.sapo[1]){
-
-        res_animal(
-            'Anura',
-            'Bufonidae',
-            'Rhinella',
-            'R. marinaa',
-            'Locais úmidos, como brejos, riachos, lagoas e igarapés',
-            'Aranhas, besouros, pequenos gafanhotos, moscas, formigas e cupins. Espécies maiores podem comer pequenos pássaros e até outros sapos'
-        )
-
-        dados_animais('Sapo-boi','sapo.webp','img-sapo')
-
-    }else if(animais == lista_animais.ra[0] || animais == lista_animais.ra[1]){
-
-        res_animal(
-            'Anura',
-            'Ranidae',
-            'Ranoidea',
-            'Agalychnis callidryas ',
-            'Vivem perto de corpos d`água, lagos, lagoas, cachoeiras e pântanos',
-            'Pequenos artrópodes, insetos, vermes e outros animais'
-        )
-
-        dados_animais('Rã','ra.jpg','img-ra')
-
-    }else if(animais == lista_animais.salamandra){
-
-        res_animal(
-            'Urodela',
-            'Salamandridae',
-            'Salamandra','Salamandra salamandra',
-            'Algumas espécies vivem em cavernas; temperatura e umidade constantes favorecem o habitat das espécies',
-            'Pequenos animais, como insetos, larvas de outros animais, crustáceos, pequenos peixes, entre outros.'
-        )
-
-        dados_animais('Salamandra','salamandra.jpg','img-salamandra')
-
-    }else if(animais == lista_animais.cobra_cega[0] || animais == lista_animais.cobra_cega[1]){
-
-        res_animal(
-            'Gymnophiona',
-            'Typhlopidae',
-            'Lissanfíbio',
-            'Sinphonops annulatus',
-            'vivem enterrados (hábito fossorial) ou na superfície de solos úmidos','Vivem enterrados (hábito fossorial) ou na superfície de solos úmidos',
-            'Pequenos invertebrados'
-        )
-
-        dados_animais('Cobra-cega','cobra-cega.webp','img-cobra-cega')
-
+            res_animal(
+                'Urodela (Caudata)',
+                'Ambystomidae',
+                'Ambyostoma',
+                'Ambyostoma mexicanum',
+                'Ambientes escuros e de água doce',
+                'Girinos e pequenos invertebrados (insetos, crustáceos e minhocas)'
+            )
+            
+            dados_animais('Axolote','axolote.jpg','img-axolote')
+    
+        }else if(animais == lista_animais.sapo[0] || animais == lista_animais.sapo[1]){
+    
+            res_animal(
+                'Anura',
+                'Bufonidae',
+                'Rhinella',
+                'R. marinaa',
+                'Locais úmidos, como brejos, riachos, lagoas e igarapés',
+                'Aranhas, besouros, pequenos gafanhotos, moscas, formigas e cupins. Espécies maiores podem comer pequenos pássaros e até outros sapos'
+            )
+    
+            dados_animais('Sapo-boi','sapo.webp','img-sapo')
+    
+        }else if(animais == lista_animais.ra[0] || animais == lista_animais.ra[1]){
+    
+            res_animal(
+                'Anura',
+                'Ranidae',
+                'Ranoidea',
+                'Agalychnis callidryas ',
+                'Vivem perto de corpos d`água, lagos, lagoas, cachoeiras e pântanos',
+                'Pequenos artrópodes, insetos, vermes e outros animais'
+            )
+    
+            dados_animais('Rã','ra.jpg','img-ra')
+    
+        }else if(animais == lista_animais.salamandra){
+    
+            res_animal(
+                'Urodela',
+                'Salamandridae',
+                'Salamandra','Salamandra salamandra',
+                'Algumas espécies vivem em cavernas; temperatura e umidade constantes favorecem o habitat das espécies',
+                'Pequenos animais, como insetos, larvas de outros animais, crustáceos, pequenos peixes, entre outros.'
+            )
+    
+            dados_animais('Salamandra','salamandra.jpg','img-salamandra')
+    
+        }else if(animais == lista_animais.cobra_cega[0] || animais == lista_animais.cobra_cega[1]){
+    
+            res_animal(
+                'Gymnophiona',
+                'Typhlopidae',
+                'Lissanfíbio',
+                'Sinphonops annulatus',
+                'vivem enterrados (hábito fossorial) ou na superfície de solos úmidos','Vivem enterrados (hábito fossorial) ou na superfície de solos úmidos',
+                'Pequenos invertebrados'
+            )
+    
+            dados_animais('Cobra-cega','cobra-cega.webp','img-cobra-cega')
+    
+        }
     }
-    if(animais == lista_animais.axolote){
-
-        res_animal(
-            'Urodela (Caudata)',
-            'Ambystomidae',
-            'Ambyostoma',
-            'Ambyostoma mexicanum',
-            'Ambientes escuros e de água doce',
-            'Girinos e pequenos invertebrados (insetos, crustáceos e minhocas)'
-        )
-
-        dados_animais('Axolote','axolote.jpg','img-axolote')
-
-    }else if(animais == lista_animais.sapo[0] || animais == lista_animais.sapo[1]){
-
-        res_animal(
-            'Anura',
-            'Bufonidae',
-            'Rhinella',
-            'R. marinaa',
-            'Locais úmidos, como brejos, riachos, lagoas e igarapés',
-            'Aranhas, besouros, pequenos gafanhotos, moscas, formigas e cupins. Espécies maiores podem comer pequenos pássaros e até outros sapos'
-        )
-
-        dados_animais('Sapo-boi','sapo.webp','img-sapo')
-
-    }else if(animais == lista_animais.ra[0] || animais == lista_animais.ra[1]){
-
-        res_animal(
-            'Anura',
-            'Ranidae',
-            'Ranoidea',
-            'Agalychnis callidryas ',
-            'Vivem perto de corpos d`água, lagos, lagoas, cachoeiras e pântanos',
-            'Pequenos artrópodes, insetos, vermes e outros animais'
-        )
-
-        dados_animais('Rã','ra.jpg','img-ra')
-
-    }else if(animais == lista_animais.salamandra){
-
-        res_animal(
-            'Urodela',
-            'Salamandridae',
-            'Salamandra','Salamandra salamandra',
-            'Algumas espécies vivem em cavernas; temperatura e umidade constantes favorecem o habitat das espécies',
-            'Pequenos animais, como insetos, larvas de outros animais, crustáceos, pequenos peixes, entre outros.'
-        )
-
-        dados_animais('Salamandra','salamandra.jpg','img-salamandra')
-
-    }else if(animais == lista_animais.cobra_cega[0] || animais == lista_animais.cobra_cega[1]){
-
-        res_animal(
-            'Gymnophiona',
-            'Typhlopidae',
-            'Lissanfíbio',
-            'Sinphonops annulatus',
-            'vivem enterrados (hábito fossorial) ou na superfície de solos úmidos','Vivem enterrados (hábito fossorial) ou na superfície de solos úmidos',
-            'Pequenos invertebrados'
-        )
-
-        dados_animais('Cobra-cega','cobra-cega.webp','img-cobra-cega')
-
-    }
-
+    
     focar()
     
     return lista_animais
