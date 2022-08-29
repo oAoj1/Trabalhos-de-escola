@@ -14,10 +14,10 @@ function scrollar(evento){
     })
 }
 
-function voltar(){
-    window.scroll(0,0)
-}
-
 menuitens.forEach(item =>{
     item.addEventListener('click',scrollar)
 })
+
+function voltar(){
+    window.scroll(0,0)
+}
