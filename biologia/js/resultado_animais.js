@@ -23,7 +23,7 @@ function Sapo() {
         <li><strong>Ordem:</strong> Anura</li>
         <li><strong>Familia:</strong> Bufonidae</li>
         <li><strong>Gênero:</strong> Rhinella</li>
-        <li><strong>Espécie:</strong> R. marinaa</li>
+        <li><strong>Espécie:</strong> Rhinella marina</li>
         <li><strong>Habitat:</strong> Locais úmidos, como brejos, riachos, lagoas e igarapés</li>
         <li><strong>Alimentação:</strong>Aranhas, besouros, pequenos gafanhotos, moscas, formigas e cupins. Espécies maiores podem  comer pequenos pássaros e até outros sapos</li>  
     </ul>`
