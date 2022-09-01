@@ -5,6 +5,8 @@
     padding: 0;
     box-sizing: border-box;
     list-style-type: none;
+    font-family: 'Anek Telugu','Candal',Arial, Helvetica, sans-serif;
+    text-decoration: none;
 }
 
 html,body{
@@ -14,4 +16,19 @@ html,body{
 
 :root{
     
+}
+
+header,footer{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.container{
+    width: 1200px;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }

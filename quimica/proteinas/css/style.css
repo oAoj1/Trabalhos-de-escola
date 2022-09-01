@@ -1,0 +1,81 @@
+/*HEADER COMEÇO */
+
+.header-content{
+    display: flex;
+    align-items: center;
+}
+
+.logoH{
+    position: relative;
+}
+
+.logoH img{
+    margin: 1.5em;
+    max-width: 100px;
+}
+
+.menu{
+    width: 100%;
+}
+
+.menu ul{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu ul li{
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+.menu a{
+    margin: 0 1.5em;
+    color: #000000;
+}
+
+.mesa-content{
+    display: flex;
+    align-items: center;
+}
+
+.mesa{
+    width: 100%;
+    top: 10em;
+    position:relative;
+}
+
+.bequers-content{
+    width: 100%;
+    z-index: 2;
+    display: flex;
+    position: absolute;
+    max-width: max-content;
+}
+
+.bequer-roxo{
+    width: 40%;
+    height: 40%;
+}
+
+.bequer-azul{
+    width: 40%;
+    height: 45%;
+    position: relative;
+    top: 5em;
+    left: 70%;
+}
+
+.titulo-content{
+    width: 100%;
+    position: absolute;
+    z-index: 5;
+}
+
+.titulo-content h1{
+    text-align: center;
+    font-size: 5em;
+    position: relative;
+    bottom: 10px;
+}
+
+/*HEADER FINAL */
