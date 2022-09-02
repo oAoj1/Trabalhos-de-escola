@@ -15,7 +15,7 @@ html,body{
 }
 
 :root{
-    
+   --vc1:#00ffa6;
 }
 
 header,footer{
@@ -31,4 +31,10 @@ header,footer{
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }

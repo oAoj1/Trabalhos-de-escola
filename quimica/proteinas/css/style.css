@@ -1,5 +1,12 @@
 /*HEADER COMEÇO */
 
+header{
+    background-image: url('../imagens/backgrounds/fundo.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:100% cover;
+}
+
 .header-content{
     display: flex;
     align-items: center;
@@ -24,6 +31,7 @@
 }
 
 .menu ul li{
+    transition: 0.4s;
     font-size: 2em;
     text-transform: uppercase;
 }
@@ -33,49 +41,41 @@
     color: #000000;
 }
 
-.mesa-content{
+.menu li:hover{
+    transform: translateY(-5px);
+}
+
+form{
+    font-size: 2em;
     display: flex;
-    align-items: center;
-}
-
-.mesa{
-    width: 100%;
-    top: 10em;
-    position:relative;
-}
-
-.bequers-content{
-    width: 100%;
-    z-index: 2;
-    display: flex;
-    position: absolute;
-    max-width: max-content;
-}
-
-.bequer-roxo{
-    width: 40%;
-    height: 40%;
-}
-
-.bequer-azul{
-    width: 40%;
-    height: 45%;
-    position: relative;
-    top: 5em;
-    left: 70%;
-}
-
-.titulo-content{
-    width: 100%;
-    position: absolute;
-    z-index: 5;
-}
-
-.titulo-content h1{
     text-align: center;
-    font-size: 5em;
-    position: relative;
-    bottom: 10px;
+}
+
+form .objetivos-content{
+    display: flex;
+    flex-direction: column;
+}
+
+form .objetivos-content label{
+    display: flex;
+}
+
+form input[type=text],
+form input[type=number]{
+    display: flex;
+    margin: auto;
+    width: 400px;
+    font-size: 1em;
+    padding: 0.2em;
+    border-radius: 10px;
+    outline: 0;
+    border: 1px solid black;
+}
+
+form button{
+    max-width: max-content;
+    max-height: max-content;
+    font-size: 2em;
 }
 
 /*HEADER FINAL */

@@ -12,7 +12,7 @@
     <!--STYLES-->
 
     <!--SCRIPTS-->
-    <script src="js/" defer></script>
+    <script src="js/script.js" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" defer></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" defer></script>
     <!--SCRIPTS-->
@@ -46,23 +46,54 @@
         </div><!--header-content--->
 
         <div class="BG">
-            <div class="mesa-content">
-                <img class="mesa" src="imagens/backgrounds/mesa.png">
-                
-                <div class="bequers-content">
-                    <img class="bequer-roxo" src="imagens/backgrounds/B-roxo.png">
-                    <img class="bequer-azul" src="imagens/backgrounds/B-azul.png">
-                </div><!--bequers-content-->
-                
-                <div class="titulo-content">
-                    <h1>Proteínas</h1>
-                </div><!--titulo content-->
-                
-            </div><!--mesa-content-->
             
         </div><!--BG-->
 
     </header>
+
+   <section>
+
+    <form id="formulario" action="">
+
+        <div class="objetivos-content">
+
+            <div style="max-width: max-content;" class="container">
+                <label for="perder">perder peso</label>
+                <input type="radio" name="objetivo" id="perder">
+            </div>
+
+            <div style="max-width: max-content;" class="container">
+                <label for="manter">manter a dieta</label>
+                <input type="radio" name="objetivo" id="manter">
+            </div>
+
+            <div style="max-width: max-content;" class="container">
+                <label for="ganhar">ganhar masssa muscular</label>
+                <input type="radio" name="objetivo" id="ganhar">
+            </div>
+
+        </div><!--objetivos-content-->
+
+        <div>
+            <label for="nome">nome</label>
+            <input type="text" name="nome" id="nome">
+            
+            <label for="idade">idade</label>
+            <input type="number" name="idade" id="idade">
+        </div>
+
+        <div>
+            <label for="altura">altura</label>
+            <input type="number" name="altura" id="altura">
+
+            <label for="peso">peso</label>
+            <input type="number" name="peso" id="peso">
+        </div>
+        <button onclick="clicar()" id="enviar">enviar</button>
+
+    </form>
+
+   </section>
 
     <footer></footer>
 
