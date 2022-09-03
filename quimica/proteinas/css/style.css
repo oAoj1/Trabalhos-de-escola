@@ -78,4 +78,10 @@ form button{
     font-size: 2em;
 }
 
+#resultado_proteinas{
+    text-align: center;
+    font-size: 2em;
+    margin-top: 1em;
+}
+
 /*HEADER FINAL */

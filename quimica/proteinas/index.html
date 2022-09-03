@@ -13,6 +13,9 @@
 
     <!--SCRIPTS-->
     <script src="js/script.js" defer></script>
+    <script src="js/formulas.js" defer></script>
+    <script src="js/imc.js" defer></script>
+    <script src="js/validacoes.js" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" defer></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" defer></script>
     <!--SCRIPTS-->
@@ -25,7 +28,9 @@
 
         <div class="header-content">
             <div class="logoH">
-                <img src="imagens/logos/logo.png" alt="">
+                <a href="index.html">
+                    <img src="imagens/logos/logo.png" alt="">
+                </a>
             </div><!--logoH-->
 
             <div class="menu">
@@ -68,7 +73,7 @@
             </div>
 
             <div style="max-width: max-content;" class="container">
-                <label for="ganhar">ganhar masssa muscular</label>
+                <label for="ganhar">ganhar massa muscular</label>
                 <input type="radio" name="objetivo" id="ganhar">
             </div>
 
@@ -77,7 +82,7 @@
         <div>
             <label for="nome">nome</label>
             <input type="text" name="nome" id="nome">
-            
+
             <label for="idade">idade</label>
             <input type="number" name="idade" id="idade">
         </div>
@@ -89,9 +94,12 @@
             <label for="peso">peso</label>
             <input type="number" name="peso" id="peso">
         </div>
-        <button onclick="clicar()" id="enviar">enviar</button>
+        <button id="enviar">enviar</button>
 
     </form>
+
+    <div id="resultado_proteinas"></div>
+    <ul id="erros"></ul>
 
    </section>
 

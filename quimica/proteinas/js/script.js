@@ -1,5 +1,57 @@
-/*
-Consumo mais baixo de proteína (1,0 a 1,4g de ptn/Kg/dia);
+const botao = document.querySelector('#enviar')
+botao.addEventListener('click',calcular)
+botao.addEventListener('submit',calcular)
+
+const resultado = document.querySelector('#resultado_proteinas')
+const formulario = document.querySelector('#formulario')
+const objetivo = document.getElementsByName('objetivo')
+
+/*funcoes */
+
+function calcular(){
+    event.preventDefault()
+
+    if(objetivo[0].checked){
+        resultados()
+
+    }else if(objetivo[1].checked){
+       resultados()
+
+    }else if(objetivo[2].checked){
+        resultados()
+
+    }else{
+        resultado.innerHTML = 'Assinale uma alternativa'
+    }
+
+}
+
+function resultados(objetivos){
+    const n = document.querySelector('#nome')
+    const i = document.querySelector('#idade')
+    const a = document.querySelector('#altura')
+    const p = document.querySelector('#peso')
+    
+    const nome = n.value
+    const idade = i.value
+    const peso = p.value
+    const altura = a.value
+
+    const imc = Math.round(calcular_imc ( peso / (altura*altura ) ))
+
+    resultado.innerHTML = `
+    ${objetivos} G de proteína <br>
+    Nome: ${nome} 
+    Idade: ${idade} <br>
+    Altura: ${altura} 
+    Peso: ${peso} <br> 
+    IMC: ${imc} 
+    Classificação: ${classificaçao_imc(imc)}
+    ` 
+   
+} 
+
+/* Consumo mais baixo de proteína (1,0 a 1,4g de ptn/Kg/dia);
 Consumo médio de proteína (1,6 a 1,8 g de ptn/Kg/dia);
 Alto consumo de proteína (> 2,0 g de Ptn/kg/dia).
 
@@ -9,40 +61,5 @@ jovens entre 15 e 24 anos,
 adulto jovem de 25 a 44 anos, 
 adultos de 45 a 59 anos,
 idosos de 60 a 90 anos
-muito idosas acima de 90 anos.
-*/
+muito idosas acima de 90 anos.*/
 
-function clicar(){
-    event.preventDefault()
-
-    var n = document.querySelector('#nome')
-    var i = document.querySelector('#idade')
-    var a = document.querySelector('#altura')
-    var p = document.querySelector('#peso')
-
-    var objetivo = document.getElementsByName('objetivo')
-
-    var botao = document.querySelector('#enviar')
-    var formulario = document.querySelector('#formulario')
-
-    var peso = p.value
-    var altura = a.value
-
-    var imc = Math.round(peso / (altura*altura))
-    var perder_peso = Math.round(peso * 0.75)
-    var manter_peso = Math.round(peso * 1.2)
-    var ganhar_peso = Math.round(peso * 2.0)
-
-    if(objetivo[0].checked){
-        
-    }
-
-    if(objetivo[1].checked){
-        
-    }
-
-    if(objetivo[2].checked){
-        
-    }
-
-}
