@@ -1,4 +1,5 @@
 function objetivos(peso){
+
     if(objetivo[0].checked){
         const perder_peso = Math.round(peso * 1.0)
         return perder_peso

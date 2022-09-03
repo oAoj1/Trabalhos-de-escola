@@ -12,13 +12,13 @@ function calcular(){
     event.preventDefault()
 
     if(objetivo[0].checked){
-        resultados()
+        resultados(objetivos())
 
     }else if(objetivo[1].checked){
-       resultados()
+       resultados(objetivos())
 
     }else if(objetivo[2].checked){
-        resultados()
+        resultados(objetivos())
 
     }else{
         resultado.innerHTML = 'Assinale uma alternativa'
@@ -26,7 +26,7 @@ function calcular(){
 
 }
 
-function resultados(objetivos){
+function resultados(){
     const n = document.querySelector('#nome')
     const i = document.querySelector('#idade')
     const a = document.querySelector('#altura')
@@ -37,15 +37,15 @@ function resultados(objetivos){
     const peso = p.value
     const altura = a.value
 
-    const imc = Math.round(calcular_imc ( peso / (altura*altura ) ))
+    const imc = Math.round(peso / (altura*altura))
 
     resultado.innerHTML = `
-    ${objetivos} G de proteína <br>
-    Nome: ${nome} 
+    ${objetivos(peso)} G de proteína <br>
+    Nome: ${nome} //
     Idade: ${idade} <br>
-    Altura: ${altura} 
+    Altura: ${altura} //
     Peso: ${peso} <br> 
-    IMC: ${imc} 
+    IMC: ${imc} //
     Classificação: ${classificaçao_imc(imc)}
     ` 
    

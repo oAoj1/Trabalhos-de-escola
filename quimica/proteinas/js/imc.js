@@ -5,22 +5,22 @@ function calcular_imc(peso,altura){
 
 function classificaçao_imc(imc){
     if(imc < 18.5){
-        resultado.innerHTML = 'Abaixo do peso'
+        return 'Abaixo do peso'
     }
     if(imc >= 18.5 && imc <= 24.9){
-        resultado.innerHTML += 'Peso normal'
+        return 'Peso normal'
     }
     if(imc >= 25 && imc <= 29.9){
-        resultado.innerHTML += 'Sobre peso'
+        return 'Sobre peso'
     }
     if(imc >= 30 && imc <= 34.9){
-        resultado.innerHTML += 'Obesidade grau 1'
+        return 'Obesidade grau 1'
     }
     if(imc >= 35 && imc <= 39.9){
-        resultado.innerHTML += 'Obesidade grau 2'
+        return 'Obesidade grau 2'
     }
     if(imc >= 40){
-        resultado.innerHTML += 'Obesidade grau 3'
+        return 'Obesidade grau 3'
     }
 
 }
