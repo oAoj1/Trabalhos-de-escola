@@ -28,9 +28,10 @@ function calcular(){
 
     const lista = []
 
-    if(!validar_objetivos(objetivo)){
+    if(!validar_objetivos(objetivo) && lista.length > 0){
         erros.innerHTML = 'Preencha um objetivo '
-
+        resultado.innerHTML = ''
+        
     }
     if(!validar_nome(nome)){
         lista.push('Preencha nome ')
@@ -50,12 +51,15 @@ function calcular(){
 
     }if(objetivo[0].checked){
         resultados(objetivos())
+        erros.innerHTML = ''
 
     }else if(objetivo[1].checked){
         resultados(objetivos())
+        erros.innerHTML = ''
 
     }else if(objetivo[2].checked){
         resultados(objetivos())
+        erros.innerHTML = ''
 
     }
 
