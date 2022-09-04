@@ -12,8 +12,6 @@ function objetivos(peso){
         const ganhar_peso = Math.round(peso * 2.0)
         return ganhar_peso
         
-    }else{
-        return false
     }
  
 }

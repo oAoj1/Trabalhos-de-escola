@@ -1,11 +1,11 @@
 const botao = document.querySelector('#enviar')
-botao.addEventListener('click',calcular)
-botao.addEventListener('submit',calcular)
-
 const objetivo = document.getElementsByName('objetivo')
 const resultado = document.querySelector('#resultado_proteinas')
 const formulario = document.querySelector('#formulario')
 const erros = document.querySelector('#erros')
+
+botao.addEventListener('click',calcular)
+botao.addEventListener('submit',calcular)
 
 
 /* FUNÇÕES */
@@ -14,29 +14,6 @@ const erros = document.querySelector('#erros')
 function calcular(){
     event.preventDefault()
 
-    if(objetivo[0].checked){
-        resultados(objetivos())
-        erros.innerHTML = ''
-
-    }else if(objetivo[1].checked){
-        resultados(objetivos())
-        erros.innerHTML = ''
-
-    }else if(objetivo[2].checked){
-        resultados(objetivos())
-        erros.innerHTML = ''
-
-    }else{
-        erros.innerHTML = 'Assinale um objetivo'
-        limpar_resultado()
-
-    }
-    
-    formulario.reset()
-
-}
-
-function resultados(){
     const n = document.querySelector('#nome')
     const i = document.querySelector('#idade')
     const a = document.querySelector('#altura')
@@ -49,15 +26,53 @@ function resultados(){
 
     const imc = Math.round(peso / (altura*altura))
 
-    resultado.innerHTML = `
-    <p>
-        ${objetivos(peso)} G de proteína <br>
-        Nome: ${nome} //
-        Idade: ${idade} <br>
-        Altura: ${altura} //
-        Peso: ${peso} <br> 
-        IMC: ${imc} //
-        Classificação: ${classificaçao_imc(imc)}
-    </p>` 
+    const lista = []
 
-} 
+    if(!validar_objetivos(objetivo)){
+        erros.innerHTML = 'Preencha um objetivo '
+
+    }
+    if(!validar_nome(nome)){
+        lista.push('Preencha nome ')
+        erros.textContent = lista
+
+    }if(!validar_idade(idade)){
+        lista.push('Preencha idade ')
+        erros.textContent = lista
+
+    }if(!validar_peso(peso)){
+        lista.push('Preencha peso ')
+        erros.textContent = lista
+
+    }if(!validar_altura(altura)){
+        lista.push('Preencha altura ')
+        erros.textContent = lista
+
+    }if(objetivo[0].checked){
+        resultados(objetivos())
+
+    }else if(objetivo[1].checked){
+        resultados(objetivos())
+
+    }else if(objetivo[2].checked){
+        resultados(objetivos())
+
+    }
+
+    console.log(lista);
+
+    function resultados(){ 
+        resultado.innerHTML = `
+        <p>
+            ${objetivos(peso)} G de proteína <br>
+            Nome: ${nome} //
+            Idade: ${idade} <br>
+            Altura: ${altura} //
+            Peso: ${peso} <br> 
+            IMC: ${imc} //
+            Classificação: ${classificaçao_imc(imc)}
+        </p>`
+    
+    } 
+
+}
