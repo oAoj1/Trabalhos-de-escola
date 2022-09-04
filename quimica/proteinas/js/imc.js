@@ -1,8 +1,3 @@
-function calcular_imc(peso,altura){
-    var imc = peso / (altura*altura)
-    return imc
-}
-
 function classificaçao_imc(imc){
     if(imc < 18.5){
         return 'Abaixo do peso'

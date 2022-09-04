@@ -84,4 +84,10 @@ form button{
     margin-top: 1em;
 }
 
+#erros{
+    text-align: center;
+    font-size: 2em;
+    margin-top: 1em;
+}
+
 /*HEADER FINAL */
