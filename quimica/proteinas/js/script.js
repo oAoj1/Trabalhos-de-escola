@@ -32,42 +32,60 @@ function calcular(){
         erros.innerHTML = 'Preencha um objetivo '
         resultado.innerHTML = ''
 
-    }if(!validar_nome(nome)){
+    }if(!nome_vazio(nome)){
         lista.push('Preencha nome ')
         erros.textContent = lista
         resultado.innerHTML = ''
 
-    }if(!validar_idade(idade)){
+    }if(!idade_vazia(idade)){
         lista.push('Preencha idade ')
         erros.textContent = lista
         resultado.innerHTML = ''
 
-    }if(!validar_peso(peso)){
+    }else if(!validar_idade(idade)){
+        lista.push('Idade invalida ')
+        erros.textContent = lista
+        resultado.innerHTML = ''
+
+    }if(!peso_vazio(peso)){
         lista.push('Preencha peso ')
         erros.textContent = lista
         resultado.innerHTML = ''
 
-    }if(!validar_altura(altura)){
+    }else if(!validar_peso(peso)){
+        lista.push('Peso invalido ')
+        erros.textContent = lista
+        resultado.innerHTML = ''
+
+    }if(!altura_vazia(altura)){
         lista.push('Preencha altura ')
         erros.textContent = lista
         resultado.innerHTML = ''
 
-    }if(lista.length == 0){
+    }else if(!validar_altura(altura)){
+        lista.push('Altura invalida ')
+        erros.textContent = lista
+        resultado.innerHTML = ''
+
+    }
+
+    if(lista.length == 0){
         if(objetivo[0].checked){
             resultados(objetivos())
             erros.innerHTML = ''
+            formulario.reset()
 
         }else if(objetivo[1].checked){
             resultados(objetivos())
             erros.innerHTML = ''
+            formulario.reset()
 
         }else if(objetivo[2].checked){
             resultados(objetivos())
             erros.innerHTML = ''
+            formulario.reset()
 
-        }
-
-        formulario.reset()
+        }      
 
     }
 
