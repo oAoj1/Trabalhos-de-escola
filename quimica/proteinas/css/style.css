@@ -1,10 +1,10 @@
 /*HEADER COMEÇO */
 
 header{
-    background-image: url('../imagens/backgrounds/fundo.png');
+    background-image: url('../imagens/backgrounds/pack2/imagem.png');
     background-position: center;
     background-repeat: no-repeat;
-    background-size:100% cover;
+    background-size: 100% cover;
 }
 
 .header-content{

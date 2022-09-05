@@ -33,37 +33,22 @@ function calcular(){
         resultado.innerHTML = ''
 
     }if(!nome_vazio(nome)){
-        lista.push('Preencha nome ')
+        lista.push('Nome incorreto ')
         erros.textContent = lista
         resultado.innerHTML = ''
 
     }if(!idade_vazia(idade)){
-        lista.push('Preencha idade ')
-        erros.textContent = lista
-        resultado.innerHTML = ''
-
-    }else if(!validar_idade(idade)){
-        lista.push('Idade invalida ')
+        lista.push('Idade incorreta ')
         erros.textContent = lista
         resultado.innerHTML = ''
 
     }if(!peso_vazio(peso)){
-        lista.push('Preencha peso ')
-        erros.textContent = lista
-        resultado.innerHTML = ''
-
-    }else if(!validar_peso(peso)){
-        lista.push('Peso invalido ')
+        lista.push('Peso incorreto ')
         erros.textContent = lista
         resultado.innerHTML = ''
 
     }if(!altura_vazia(altura)){
-        lista.push('Preencha altura ')
-        erros.textContent = lista
-        resultado.innerHTML = ''
-
-    }else if(!validar_altura(altura)){
-        lista.push('Altura invalida ')
+        lista.push('Altura incorreta ')
         erros.textContent = lista
         resultado.innerHTML = ''
 
