@@ -28,46 +28,51 @@ function calcular(){
 
     const lista = []
 
-    if(!validar_objetivos(objetivo) && lista.length > 0){
+    if(!validar_objetivos(objetivo)){
         erros.innerHTML = 'Preencha um objetivo '
         resultado.innerHTML = ''
-        
-    }
-    if(!validar_nome(nome)){
+
+    }if(!validar_nome(nome)){
         lista.push('Preencha nome ')
         erros.textContent = lista
+        resultado.innerHTML = ''
 
     }if(!validar_idade(idade)){
         lista.push('Preencha idade ')
         erros.textContent = lista
+        resultado.innerHTML = ''
 
     }if(!validar_peso(peso)){
         lista.push('Preencha peso ')
         erros.textContent = lista
+        resultado.innerHTML = ''
 
     }if(!validar_altura(altura)){
         lista.push('Preencha altura ')
         erros.textContent = lista
+        resultado.innerHTML = ''
 
-    }if(objetivo[0].checked){
-        resultados(objetivos())
-        erros.innerHTML = ''
+    }if(lista.length == 0){
+        if(objetivo[0].checked){
+            resultados(objetivos())
+            erros.innerHTML = ''
 
-    }else if(objetivo[1].checked){
-        resultados(objetivos())
-        erros.innerHTML = ''
+        }else if(objetivo[1].checked){
+            resultados(objetivos())
+            erros.innerHTML = ''
 
-    }else if(objetivo[2].checked){
-        resultados(objetivos())
-        erros.innerHTML = ''
+        }else if(objetivo[2].checked){
+            resultados(objetivos())
+            erros.innerHTML = ''
+
+        }
+
+        formulario.reset()
 
     }
 
-    console.log(lista);
-
     function resultados(){ 
         resultado.innerHTML = `
-        <p>
             ${objetivos(peso)} G de proteína <br>
             Nome: ${nome} //
             Idade: ${idade} <br>
@@ -75,8 +80,8 @@ function calcular(){
             Peso: ${peso} <br> 
             IMC: ${imc} //
             Classificação: ${classificaçao_imc(imc)}
-        </p>`
+        `
     
     } 
-
+       
 }

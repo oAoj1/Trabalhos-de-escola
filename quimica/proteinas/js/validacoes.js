@@ -15,7 +15,7 @@ function validar_nome(nome){
 }
 
 function validar_idade(idade){
-    if(idade.length > 0 || idade.value > 0 && idade.value < 150){
+    if(idade.length > 0){
         return true
     }else{
         return false
@@ -23,7 +23,7 @@ function validar_idade(idade){
 }
 
 function validar_peso(peso){
-    if(peso.length > 0 || peso.value > 0 && peso.value < 1000){
+    if(peso.length > 0){
         return true
     }else{
         return false
@@ -31,7 +31,7 @@ function validar_peso(peso){
 }
 
 function validar_altura(altura){
-    if(altura.length > 0 || altura.value > 0 && altura.value < 3.00){
+    if(altura.length > 0){
         return true
     }else{
         return false
