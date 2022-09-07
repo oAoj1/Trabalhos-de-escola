@@ -24,16 +24,26 @@ function calcular(){
 
     const imc = Math.round(peso / (altura*altura))
 
+    if(n.value.length == 0 && a.value.length == 0 && p.value.length == 0){
+        resultado.innerHTML = 'Preencha nome, peso e altura'
 
-    if(objetivo[0].checked){
-        resultados(objetivos())
+    }else if(n.value.length == 0 || a.value.length == 0 || p.value.length == 0){
+        resultado.innerHTML = 'Dados insuficientes'
 
-    }else if(objetivo[1].checked){
-        resultados(objetivos())
+    }else{
+        if(objetivo[0].checked){
+            resultados(objetivos())
+    
+        }else if(objetivo[1].checked){
+            resultados(objetivos())
+    
+        }else if(objetivo[2].checked){
+            resultados(objetivos())
+    
+        }
 
-    }else if(objetivo[2].checked){
-        resultados(objetivos())
-
+        formulario.reset()
+        
     }
     
 

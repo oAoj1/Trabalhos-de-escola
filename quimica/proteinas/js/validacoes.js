@@ -1,3 +1,11 @@
+function nome_vazio(nome){
+    if(nome.length == 0){
+        return true
+    }else{
+        return false
+    }
+}
+
 function altura_valida(altura){
     if(altura >= 0 && altura <= 3.00){
         return true

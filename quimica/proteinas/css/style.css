@@ -1,10 +1,11 @@
 /*HEADER COMEÇO */
 
 header{
-    background-image: url('../imagens/backgrounds/pack2/imagem.png');
+    background-image: url('../imagens/backgrounds/pack2/fundo.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% cover;
+    box-shadow: 3px 4px 10px #0a393f;
 }
 
 .header-content{
@@ -46,6 +47,8 @@ header{
 }
 
 form{
+    margin-top: 1em;
+    margin-left: 1em;
     font-size: 2em;
     display: flex;
     text-align: center;
