@@ -13,5 +13,5 @@ function objetivos(peso){
         return ganhar_peso
         
     }
- 
+
 }

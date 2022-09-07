@@ -60,34 +60,33 @@ form .objetivos-content label{
     display: flex;
 }
 
-form input[type=text],
-form input[type=number]{
-    display: flex;
-    margin: auto;
-    width: 400px;
-    font-size: 1em;
-    padding: 0.2em;
-    border-radius: 10px;
-    outline: 0;
-    border: 1px solid black;
+#altura,#peso{
+    font-size: 0.5em;
+    width: 100%;
+    padding: 0.5em;
+    margin: 0.2em 0.9em;
+}
+
+#nome{
+    font-size: 0.5em;
+    padding: 0.5em;
+    margin: 0.2em 0.9em;
+    width: 100%;
 }
 
 form button{
     max-width: max-content;
     max-height: max-content;
     font-size: 2em;
+    margin-left: 0.5em;
 }
 
 #resultado_proteinas{
-    text-align: center;
     font-size: 2em;
-    margin-top: 1em;
-}
-
-#erros{
+    margin: auto;
     text-align: center;
-    font-size: 2em;
-    margin-top: 1em;
+    margin:1em auto 0 auto;
+    max-width: max-content;
 }
 
 /*HEADER FINAL */
