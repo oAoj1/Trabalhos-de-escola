@@ -1,4 +1,5 @@
 const botao = document.querySelector('#enviar')
+const limpar = document.querySelector("#limpar")
 const objetivo = document.getElementsByName('objetivo')
 const resultado = document.querySelector('#resultado_proteinas')
 const formulario = document.querySelector('#formulario')
@@ -6,7 +7,7 @@ const erros = document.querySelector('#erros')
 
 botao.addEventListener('click',calcular)
 botao.addEventListener('submit',calcular)
-
+limpar.addEventListener("click",limpando)
 
 /* FUNÇÕES */
 
@@ -43,9 +44,8 @@ function calcular(){
         }
 
         formulario.reset()
-        
+
     }
-    
 
     function resultados(){ 
         resultado.innerHTML = `
@@ -59,4 +59,10 @@ function calcular(){
 
     }
 
+}  
+
+function limpando(){
+    event.preventDefault()
+    resultado.innerHTML = ''
+    formulario.reset()
 }
