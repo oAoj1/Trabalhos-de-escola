@@ -1,0 +1,39 @@
+A estrutura das proteínas diferenciam-se quanto a quantidade de cadeias peptídicas envolvidas e as interações que há entre elas. Na estrutura das proteinas há somente quatro elementos quimicos: carbono (C), hidrogênio (H), nitrogênio (N) e oxigênio (O).  Esses elementos formam unidades moleculares denominadas de aminoácidos.
+
+1 estrutura primaria
+2 estrutura secundária
+3 estrutura terciaria
+4 estrutura quartenária.
+
+----------
+
+1 estrutura primaria inicia-se no grupo amino (à esquerda) e prossegue até o grupo carboxila (à direita). Nesse tipo de estrutura, temos uma sequência linear de aminoácidos, não havendo nenhuma ramificação.
+
+---------------
+
+2 estrutura secundaria é o resultado da extensão ou do prolongamento de uma estrutura primária medida que a cadeia peptídica (de aminoácidos) aumenta, uma parte de um aminoácido interage com a de outro, em pontos centrais da estrutura, o que pode acontecer de duas formas:
+Em ambos os casos, as interações entre os aminoácidos podem ocorrer por meio de ligações de hidrogênio ou por pontes de enxofre.
+
+-----------
+
+3 estrutura terciaria é formada quando duas estruturas secundárias interagem por meio de seus resíduos (átomos de enxofre, de oxigênio ou de hidrogênio, por exemplo), a partir de:
+
+Forças de atração ou repulsão eletrostática;
+
+Pontes de hidrogênio;
+
+Forças de Van der Waals;
+
+Pontes de dissulfeto.
+ 
+------------
+
+4 estrutura quartenaria há a presença de duas ou mais cadeias peptídicas separadas, formando esta imagem que se relaciona por meio de diversas interações, como na estrutura terciária:
+
+Pontes de hidrogênio;
+
+Atrações eletrostáticas;
+
+Interações hidrofóbicas;
+
+Pontes dissulfeto.
