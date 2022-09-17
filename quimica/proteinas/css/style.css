@@ -8,6 +8,17 @@ header{
     box-shadow: 3px 4px 10px #0a393f;
 }
 
+.circulo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:var(--v1);
+    clip-path: circle(600px at right 800px);
+    z-index: 1;
+}
+
 .header-content{
     display: flex;
     align-items: center;
@@ -20,6 +31,7 @@ header{
 .logoH img{
     margin: 1.5em;
     max-width: 100px;
+    filter: drop-shadow(10px 10px 10px var(--v2));
 }
 
 .menu{
@@ -48,6 +60,7 @@ header{
 }
 
 .mesa-content{
+    z-index: 2;
     position: relative;
     top: 50%;
     display: inline-flex;
@@ -58,17 +71,20 @@ header{
 }
 
 .titulo-proteinas{
+    font-family: 'Candal';
+    font-weight: normal;
     width: 100%;
     z-index: 5;
     position: absolute;
     text-align: center;
-    font-size: 4.5em;
-    bottom: 75%;
+    font-size: 4em;
+    bottom: 1.5em;
     text-transform: uppercase;
+    filter: drop-shadow(10px 10px 10px var(--v2));
 }
 
 .titulo-proteinas span{
-    color: var(--vc1);
+    color: var(--v1);
 }
 
 .bequer-fundo-content1{
@@ -159,4 +175,73 @@ header{
 
 /*SECTION INICIO */
 
+section{
+    position: relative;
+    top: 3em;
+}
+
+.oquesao{
+    filter: drop-shadow(5px 5px 15px var(--p1));
+    border: 1px solid var(--p1);
+    background-color: var(--b1);
+    padding: 2em;
+    border-radius: 5em;
+    box-shadow: 2em 2em var(--p1);
+    width: 100%;
+    max-width: 50%;
+    margin: 3em;
+    top: 2em;
+    position: relative;
+}
+
+.oquesao h2{
+    padding: 0.2em;
+    font-size: 3em;
+    font-family: 'Candal';
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.oquesao span{
+    color: var(--v2);
+    filter: drop-shadow(2px 2px 2px var(--v1));
+}
+
+.oquesao p{
+    padding: 0.2em;
+    margin: 1em 0;
+    font-size: 2em;
+}
+
+.oquesao ul{
+    margin: auto;
+    max-width: max-content;
+}
+
+.oquesao li{
+    margin: auto;
+    font-weight: 700;
+    font-size: 2em;
+    margin-right: 0.5em;
+}
+
+.elementos-content{
+    align-items: center;
+    display: flex;
+}
+
+.carbono{
+    width: 200px;
+    height: 200px;
+}
+
+.hidrogenio{
+    width: 200px;
+    height: 200px;
+}
+
+.nitrogenio{
+    width: 200px;
+    height: 200px;
+}
 
