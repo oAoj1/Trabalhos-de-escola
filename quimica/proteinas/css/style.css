@@ -380,5 +380,97 @@ section{
 }
 
 .propriedades-fisicas li{
+    padding: 0.2em 0;
     font-size: 2em;
 }
+
+.piramede{
+    display: flex;
+    flex-direction: column;
+    filter: drop-shadow(5px 5px 15px var(--p1));
+    border: 1px solid var(--p1);
+    background-color: var(--b1);
+    padding: 2em;
+    border-radius: 5em;
+    box-shadow: -2em 2em var(--p1);
+    width: 100%;
+    max-width: 50%;
+    margin: 3em;
+    top: 5em;
+    position: relative;
+}
+
+.piramede h2{
+    padding: 0.2em;
+    font-size: 3em;
+    font-family: 'Candal';
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.piramede p{
+    margin: 2em 0;
+    font-size: 2em;
+}
+
+.importancia{
+    filter: drop-shadow(5px 5px 15px var(--p1));
+    border: 1px solid var(--p1);
+    background-color: var(--b1);
+    padding: 2em;
+    border-radius: 5em;
+    box-shadow: 2em 2em var(--p1);
+    width: 100%;
+    max-width: 50%;
+    margin: 3em;
+    top: 2em;
+    position: relative;
+}
+
+.importancia h2{
+    padding: 0.2em;
+    font-size: 3em;
+    font-family: 'Candal';
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.importancia p{
+    margin: 2em 0;
+    font-size: 2em;
+}
+
+.importancia span{
+    color: var(--v2);
+    filter: drop-shadow(2px 2px 2px var(--v1));
+}
+
+.alimentos{
+    display: flex;
+    flex-direction: column;
+    filter: drop-shadow(5px 5px 15px var(--p1));
+    border: 1px solid var(--p1);
+    background-color: var(--b1);
+    padding: 2em;
+    border-radius: 5em;
+    box-shadow: -2em 2em var(--p1);
+    width: 100%;
+    max-width: 50%;
+    margin: 3em;
+    top: 5em;
+    position: relative;
+}
+
+.alimentos h2{
+    padding: 0.2em;
+    font-size: 3em;
+    font-family: 'Candal';
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.alimentos li{
+    padding: 0.2em 0;
+    font-size: 2em;
+}
+
