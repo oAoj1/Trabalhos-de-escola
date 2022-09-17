@@ -1,1 +1,6 @@
-Proteína é um tipo de substância formada a partir de um conjunto de aminoácidos ligados entre si (ligações denominadas de peptídicas). Em outras palavras, as proteínas são compostas por moléculas de carbono, hidrogênio, oxigênio e nitrogênio.
+Proteína é um tipo de substância formada a partir de um conjunto de aminoácidos ligados entre si (ligações denominadas de peptídicas). Em outras palavras, as proteínas são compostas por moléculas de 
+
+carbono, 
+hidrogênio, 
+oxigênio e
+nitrogênio.

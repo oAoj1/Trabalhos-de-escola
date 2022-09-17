@@ -29,15 +29,6 @@ header,section,footer{
     height: 100%;
 }
 
-.container{
-    width: 1200px;
-    display: flex;
-    margin: auto;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;

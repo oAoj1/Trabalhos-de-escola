@@ -83,7 +83,6 @@
 
    <section> 
 
-    
         <div class="oquesao">
         <h2>O que são afinal?</h2>
             <p>São <span>macromoléculas</span> constituidas por um conjunto de <span>aminoácidos</span> interligados formados por:</p>
@@ -92,51 +91,91 @@
                 <li>Carbono</li>
                 <li>Hidrogênio</li>
                 <li>Nitrogênio</li> 
+                <li>Oxigênio</li>
                 </div>
                 <div class="elementos-content">
                     <img class="carbono" src="imagens/elementos quimicos/carbono(1).webp" alt="">
                     <img class="hidrogenio" src="imagens/elementos quimicos/hidrogenio.jpg" alt="">
                     <img class="nitrogenio" src="imagens/elementos quimicos/nitrogenio.webp" alt="">
+                    <img class="oxigenio" src="imagens/elementos quimicos/oxigenio.jpg" alt="">
                 </div>
             </ul>
         </div><!--oquesao-->
 
+        <div class="content">
+            <div class="tiposestrutura">
+                <h2>Tipos de estruturas</h2>
+                <p class="resumoestrutura">As <span>estruturas</span> das proteínas são <span>varíaveis</span>, diante de suas cadeias peptídicas<br><span>(Carbono, Hidrogênio, Nitrogênio, Oxigênio),</span> resultante das suas diferentes <span>interações</span> entre os <span>aminoácidos:</span></p>
+
+                <ul class="estruturas">
+                    <li class="primeira">
+                        <h3>Estrutura primária:</h3> <br>
+                        Começa no grupo amino(esquerda) e percorre até o grupo carboxila (direita). Nesse tipo  de estrutura, tem uma sequencia em linha reta, não tendo nenhuma ramificação
+                        <img class="primaria" src="imagens/estruturas/estrutura primaria- trabalho de quimica.webp">
+                    </li>
+
+                    <li class="segunda">
+                        <h3>Estrutura secundária:</h3> <br>
+                        <p>Conforme a extensão da estrutura primaria que é o aumento da cadeia peptídica, gera a estrutura secundária. Um aminoácido interage com o outro, em pontos vitais da estrutura, que ocorre da seguinte forma: </p>
+                        <div class="estruturas-content">
+                            <img class="secundaria1" src="imagens/estruturas/secundaria em folha.webp" alt="">
+                            <img class="secundaria2" src="imagens/estruturas/secundaria em helice.webp" alt="">
+                        </div>
+                        <p>Tanto na primeira, quanto na segunda, podem ocorrer ligações de Hidrogênio ou por pontes de enxofre</p>
+                    </li>
+
+                    <li class="terceira">
+                        <h3>Estrutura terciária:</h3> <br>
+                        <p>È formada quando duas estruturas secundárias interagem por meio dos aminoácidos(Átomos de enxofre, oxigênio ou hidrogênio) a partir de:</p>
+                        <ul class="topicosestruturas">
+                            <li>Forças de atração ou repulsão eletrostática</li>
+                            <li>Pontes de hidrogênio</li>
+                            <li>Forças de Van der Waals</li>
+                            <li>Pontes de dissulfeto</li>
+                        </ul>
+                        <img class="terciária" src="imagens/estruturas/estrutura-terciaria.webp" alt="">
+                    </li>
+                    <li class="quarto">
+                        <h3>Estrutura quaternária:</h3> <br>
+                        Constituída de duas ou mais cadeias peptídicas separadas, formando esta imagem que se relaciona por meio de diversas interações, como na estrutura terciária:
+                        <ul class="topicosestruturas">
+                            <li>Pontes de hidrogênio</li>
+                            <li>Atrações eletrostáticas</li>
+                            <li>Interações hidrofóbicas</li>
+                            <li>Pontes dissulfeto</li>
+                        </ul>
+                        <img class="quartenaria" src="imagens/estruturas/estrutura quaternaria.webp" alt="">
+                    </li>
+                </ul>
+            </div><!--tipos-estrutura-->
+        </div><!--content-->
+
     <!--
-    <form id="formulario" action="">
-
-        <div class="objetivos-content">
-
-            <div style="max-width: max-content;" class="container">
-                <label for="perder">perder peso</label>
-                <input checked type="radio" name="objetivo" id="perder">
-            </div>
-
-            <div style="max-width: max-content;" class="container">
-                <label for="manter">manter a dieta</label>
-                <input type="radio" name="objetivo" id="manter">
-            </div>
-
-            <div style="max-width: max-content;" class="container">
-                <label for="ganhar">ganhar massa muscular</label>
-                <input type="radio" name="objetivo" id="ganhar">
-            </div>
-
+    <form id="formulario" action="">   
+    
+        <div style="max-width: max-content;" class="container">
+            <label for="perder">perder peso</label>
+            <input checked type="radio" name="objetivo" id="perder">
         </div>
 
-        <div>
-            <label for="altura">altura</label>
-            <input type="number" name="altura" id="altura">
+        <div style="max-width: max-content;" class="container">
+            <label for="manter">manter a dieta</label>
+            <input type="radio" name="objetivo" id="manter">
         </div>
 
-        <div>
-            <label for="peso">peso</label>
-            <input type="number" name="peso" id="peso">
-
-            <br>
-
-            <label for="nome">nome</label>
-            <input type="text" name="nome" id="nome">    
+        <div style="max-width: max-content;" class="container">
+            <label for="ganhar">ganhar massa muscular</label>
+            <input type="radio" name="objetivo" id="ganhar">
         </div>
+
+        <label for="altura">altura</label>
+        <input type="number" name="altura" id="altura">
+
+        <label for="peso">peso</label>
+        <input type="number" name="peso" id="peso">
+
+        <label for="nome">nome</label>
+        <input type="text" name="nome" id="nome">    
 
         <button id="enviar">enviar</button>
         <button id="limpar">limpar</button>

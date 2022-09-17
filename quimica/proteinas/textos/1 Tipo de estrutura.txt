@@ -11,7 +11,10 @@ A estrutura das proteínas diferenciam-se quanto a quantidade de cadeias peptíd
 
 ---------------
 
-2 estrutura secundaria é o resultado da extensão ou do prolongamento de uma estrutura primária medida que a cadeia peptídica (de aminoácidos) aumenta, uma parte de um aminoácido interage com a de outro, em pontos centrais da estrutura, o que pode acontecer de duas formas:
+2 estrutura secundaria é o resultado da extensão ou do prolongamento de uma estrutura primária medida que a cadeia peptídica (de aminoácidos) aumenta,
+
+uma parte de um aminoácido interage com a de outro, em pontos centrais da estrutura, o que pode acontecer de duas formas:
+
 Em ambos os casos, as interações entre os aminoácidos podem ocorrer por meio de ligações de hidrogênio ou por pontes de enxofre.
 
 -----------
