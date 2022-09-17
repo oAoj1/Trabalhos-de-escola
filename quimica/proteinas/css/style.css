@@ -254,7 +254,7 @@ section{
 .content{
     display: flex;
     justify-content: flex-end;
-    background-color: var(--b1);
+    background-color: var(--v3);
 }
 
 .tiposestrutura{
@@ -267,7 +267,7 @@ section{
     border-radius: 5em;
     box-shadow: -2em 2em var(--p1);
     width: 100%;
-    max-width: 80%;
+    max-width: 50%;
     margin: 3em;
     top: 5em;
     position: relative;
@@ -351,4 +351,34 @@ section{
     margin: auto;
     border-radius: 20px;
     border: 1px solid var(--p1);
+}
+
+.propriedades-fisicas{
+    filter: drop-shadow(5px 5px 15px var(--p1));
+    border: 1px solid var(--p1);
+    background-color: var(--b1);
+    padding: 2em;
+    border-radius: 5em;
+    box-shadow: 2em 2em var(--p1);
+    width: 100%;
+    max-width: 50%;
+    margin: 3em;
+    top: 2em;
+    position: relative;
+}
+
+.propriedades-fisicas h2{
+    padding: 0.2em;
+    font-size: 3em;
+    font-family: 'Candal';
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.propriedades-fisicas ul{
+    margin: 2em 0;
+}
+
+.propriedades-fisicas li{
+    font-size: 2em;
 }
