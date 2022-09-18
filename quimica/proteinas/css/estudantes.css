@@ -1,0 +1,23 @@
+.estudantes{
+    width: 100%;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.estudantes h2{
+    font-family: 'Candal';
+    font-size: 2em;
+}
+
+.estudantes ul{
+    margin: 2em auto 0 auto;
+    max-width: max-content;
+    text-align: left;
+}
+
+.estudantes li{
+    font-size: 2em;
+}

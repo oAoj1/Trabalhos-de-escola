@@ -1,0 +1,19 @@
+.fontes{
+    max-width: max-content;
+}
+
+.fontes h2{
+    font-size: 3em;
+    font-family: 'Candal';
+}
+
+.fontes li{
+    margin: 1.5em 0;
+    font-size: 1.5em;
+}
+
+.fontes a{
+    text-decoration: none;
+    color:var(--p1) ;
+    font-weight: bold;
+}
