@@ -535,6 +535,35 @@ section{
     border: 3px solid var(--p1);
 }
 
+.funcoes{
+    display: flex;
+    flex-direction: column;
+    filter: drop-shadow(5px 5px 15px var(--p1));
+    border: 1px solid var(--p1);
+    background-color: var(--b1);
+    padding: 2em;
+    border-radius: 5em;
+    box-shadow: -2em 2em var(--p1);
+    width: 100%;
+    max-width: 50%;
+    margin: 3em;
+    top: 5em;
+    position: relative;  
+}
+
+.funcoes h2{
+    padding: 0.2em;
+    font-size: 3em;
+    font-family: 'Candal';
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.funcoes li{
+    padding: 0.5em 0;
+    font-size: 2em;
+}
+
 #formulario{
     filter: drop-shadow(5px 5px 15px var(--p1));
     border: 1px solid var(--p1);
