@@ -15,7 +15,6 @@
     <script src="js/script.js" defer></script>
     <script src="js/objetivo.js" defer></script>
     <script src="js/imc.js" defer></script>
-    <script src="js/validacoes.js" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" defer></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" defer></script>
     <!--SCRIPTS-->
@@ -163,21 +162,26 @@
         </div><!--propriedades-fisicas-->
 
         <div style="background-color: var(--v1);" class="content">
-            <div class="piramede">
-                <h2>Piramede alimentar</h2>
-                <p>
-                    No terceiro nível da pirâmide, estão os alimentos de fontes de proteínas e minerais como carnes, leguminosas, leite e seus derivados.
-                </p>
-                <img class="piramede-alimentar" src="imagens/piramede_alimentar.webp" alt="">
-            </div><!--piramede-->
+            <img class="piramede-alimentar" src="imagens/piramede_alimentar.webp" alt="">
+                <div class="piramede">
+                    <h2>Piramede alimentar</h2>
+                    <p>
+                        No terceiro nível da pirâmide, estão os alimentos de fontes de proteínas e minerais como carnes, leguminosas, leite e seus derivados.
+                    </p>
+                    
+                </div><!--piramede-->   
         </div>
 
-        <div class="importancia">
-            <h2>Importância</h2>
-            <p>Diversos tecidos humanos como <span>ossos e músculos são feitos de proteína</span>, são importantes para a <span>imunidade e reações químicas do nosso organismo</span> (anticorpos e enzimas são feitos de proteína). Além disso, são responsáveis por <span>transportar várias substâncias</span> como nutrientes e medicamentos através do sangue.</p>
-        </div><!--importancia-->
+        <div class="sub-content">
+            <div class="importancia">
+                <h2>Importância</h2>
+                <p>Diversos tecidos humanos como <span>ossos e músculos são feitos de proteína</span>, são importantes para a <span>imunidade e reações químicas do nosso organismo</span> (anticorpos e enzimas são feitos de proteína). Além disso, são responsáveis por <span>transportar várias substâncias</span> como nutrientes e medicamentos através do sangue.</p>
+            </div><!--importancia-->
+            <img class="anatomia" src="imagens/anatomia.webp" alt="">
+        </div>
 
         <div class="content">
+            <img class="comidas" src="imagens/proteinas.jpg" alt="">
             <div class="alimentos">
                 <h2>Alimentos</h2>
                 <ul>
@@ -195,40 +199,51 @@
             </div><!--alimentos-->
         </div>
 
-    <!--
-    <form id="formulario" action="">   
-    
-        <div style="max-width: max-content;" class="container">
+        <div class="formulas">
+            <h2>Fórmulas</h2>
+            <p>As proteínas são formadas por aminoácidos que possuem um grupo carboxila (-CO2H) e um grupo de amino (-NH2).</p>
+            <img class="formula1" src="imagens/formulas/formula1.png" alt="">
+            <img class="formula2" src="imagens/formulas/formula3.png" alt="">
+            <p><b>Ligação peptídica:</b> quando os aminoácidos se ligam, carbono de um grupo carboxila de um aminoácido se liga com o nitrogênio do grupo amido de outro.</p>
+            <img class="formula3" src="imagens/formulas/formula2.png" alt="">
+        </div><!--formulas-->
+
+        <hr style="margin-top: 10em;">
+
+    <form id="formulario" action=""> 
+        <h2>Calcule suas proteínas</h2>
+        <p><b>OBS:Esse é um calculador de ingestão amador, esses dados não devem ser considerados</b> </p>
+
+        <div class="content-objetivos">
             <label for="perder">perder peso</label>
             <input checked type="radio" name="objetivo" id="perder">
-        </div>
 
-        <div style="max-width: max-content;" class="container">
             <label for="manter">manter a dieta</label>
             <input type="radio" name="objetivo" id="manter">
-        </div>
 
-        <div style="max-width: max-content;" class="container">
             <label for="ganhar">ganhar massa muscular</label>
             <input type="radio" name="objetivo" id="ganhar">
-        </div>
+        </div><!--content-objetivos-->
 
-        <label for="altura">altura</label>
-        <input type="number" name="altura" id="altura">
+        <div class="content-inputs">
+            <label for="altura">altura</label>
+            <input type="number" name="altura" id="altura">
 
-        <label for="peso">peso</label>
-        <input type="number" name="peso" id="peso">
+            <label for="peso">peso</label>
+            <input type="number" name="peso" id="peso">
 
-        <label for="nome">nome</label>
-        <input type="text" name="nome" id="nome">    
+            <label for="nome">nome</label>
+            <input type="text" name="nome" id="nome">
+        </div><!--content-inputs-->    
 
-        <button id="enviar">enviar</button>
-        <button id="limpar">limpar</button>
+        <div class="content-botoes">
+            <button id="enviar">enviar</button>
+            <button id="limpar">limpar</button>
+        </div><!--content-botoes-->
 
     </form>
 
     <div id="resultado_proteinas"></div>
-    -->
 
    </section>
 
