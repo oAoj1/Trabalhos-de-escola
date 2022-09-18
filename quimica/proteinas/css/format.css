@@ -7,6 +7,7 @@
     list-style-type: none;
     font-family: 'Anek Telugu','Candal',Arial, Helvetica, sans-serif;
     text-decoration: none;
+    scroll-behavior: smooth;
 }
 
 html,body{
@@ -24,9 +25,14 @@ html,body{
     --a2:#A5C5FE;  
 }
 
-header,section,footer{
+header,section{
+    position: relative;
     width: 100%;
     height: 100%;
+}
+
+footer{
+    height: auto;
 }
 
 input::-webkit-outer-spin-button,

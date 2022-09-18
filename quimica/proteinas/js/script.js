@@ -26,7 +26,7 @@ function calcular(){
     const imc = Math.round(peso / (altura*altura))
 
     if(n.value.length == 0 && a.value.length == 0 && p.value.length == 0){
-        resultado.innerHTML = 'Preencha nome, peso e altura'
+        resultado.innerHTML = 'Preencha todos os dados'
 
     }else if(n.value.length == 0 || a.value.length == 0 || p.value.length == 0){
         resultado.innerHTML = 'Dados insuficientes'
@@ -48,15 +48,10 @@ function calcular(){
     }
 
     function resultados(){ 
-        resultado.innerHTML = `
-        <strong>${objetivos(peso)} G</strong> de proteína <br>
-        <strong> Nome:</strong> ${nome}
-        <strong> Altura:</strong> ${altura}  
-        <strong> Peso:</strong> ${peso} <br>
-        <strong> IMC:</strong> ${imc}
-        <strong> Classificação:</strong> ${classificaçao_imc(imc)} 
+        resultado.innerHTML = `<ion-icon name="pricetag"></ion-icon><b>${nome}</b><br>
+        consumir <ion-icon name="pizza"></ion-icon><b>${objetivos(peso)}</b> G de proteína por dia <br>
+        IMC de <b>${imc}</b> classificado <b>${classificaçao_imc(imc)}</b><ion-icon name="body"></ion-icon>
         `
-
     }
 
 }  

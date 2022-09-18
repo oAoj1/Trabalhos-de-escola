@@ -2,6 +2,10 @@ const menuitens = document.querySelectorAll('.menu ul li a')
 var botao = document.querySelector('#voltar')
 botao.addEventListener('click',voltar)
 
+function voltar(){
+    window.scroll(0,0)
+}
+
 function scrollar(evento){
     event.preventDefault()
     const elementos = evento.target
@@ -18,6 +22,4 @@ menuitens.forEach(item =>{
     item.addEventListener('click',scrollar)
 })
 
-function voltar(){
-    window.scroll(0,0)
-}
+

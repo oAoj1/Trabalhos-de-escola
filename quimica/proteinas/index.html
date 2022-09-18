@@ -40,11 +40,11 @@
                         <li>home</li>
                     </a>
                     
-                    <a href="">
+                    <a href="bibliografia.html">
                         <li>bibliografia</li>
                     </a>
                     
-                    <a href="">
+                    <a href="estudantes.html">
                         <li>estudantes</li>
                     </a>
                 </ul>
@@ -212,42 +212,61 @@
 
     <form id="formulario" action=""> 
         <h2>Calcule suas proteínas</h2>
-        <p><b>OBS:Esse é um calculador de ingestão amador, esses dados não devem ser considerados</b> </p>
+        <p>Calcule o quanto de proteína você deve consumir por dia</p>
 
-        <div class="content-objetivos">
-            <label for="perder">perder peso</label>
-            <input checked type="radio" name="objetivo" id="perder">
+        <div class="content-formulario">
 
-            <label for="manter">manter a dieta</label>
-            <input type="radio" name="objetivo" id="manter">
+            <div class="content-objetivos">
+                <h3>Assinale seu objetivo</h3>
 
-            <label for="ganhar">ganhar massa muscular</label>
-            <input type="radio" name="objetivo" id="ganhar">
-        </div><!--content-objetivos-->
+                <div class="sub-content">
+                    <label for="perder">Perder peso</label>
+                    <input checked type="radio" name="objetivo" id="perder">
+                </div>
 
-        <div class="content-inputs">
-            <label for="altura">altura</label>
-            <input type="number" name="altura" id="altura">
+                <div class="sub-content">
+                    <label for="manter">Manter a dieta</label>
+                    <input type="radio" name="objetivo" id="manter">
+                </div>
 
-            <label for="peso">peso</label>
-            <input type="number" name="peso" id="peso">
+                <div class="sub-content">
+                    <label for="ganhar">Ganhar massa muscular</label>
+                    <input type="radio" name="objetivo" id="ganhar">
+                </div>
+            </div><!--content-objetivos-->
 
-            <label for="nome">nome</label>
-            <input type="text" name="nome" id="nome">
-        </div><!--content-inputs-->    
+            <div class="content-inputs">
+                <h3>Informe seus dados</h3>
+                <label for="altura">Altura</label>
+                <input type="number" name="altura" id="altura">
 
-        <div class="content-botoes">
-            <button id="enviar">enviar</button>
-            <button id="limpar">limpar</button>
-        </div><!--content-botoes-->
+                <label for="peso">Peso</label>
+                <input type="number" name="peso" id="peso">
+<br>
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome">
+            </div><!--content-inputs-->    
+
+            <div class="content-botoes">
+                <button id="enviar">enviar</button>
+                <button id="limpar">limpar</button>
+            </div><!--content-botoes-->
+
+        </div><!--content-formulario-->
+
+        <div id="resultado_proteinas"></div>
 
     </form>
 
-    <div id="resultado_proteinas"></div>
+    <hr style="margin-top: 10em;">
+
+    <footer>
+        <h2 class="titulo-footer">Prote<span>í</span>nas</h1>
+        <p>&copy;Direitos reservados</p>
+    </footer>
 
    </section>
 
-    <footer></footer>
 
 </body>
 </html>

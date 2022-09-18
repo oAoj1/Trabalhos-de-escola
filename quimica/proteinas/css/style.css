@@ -562,12 +562,136 @@ section{
     font-size: 2em;
 }
 
+#formulario h3{
+    font-size: 2.5em;
+}
+
+.content-formulario{
+    display: flex;
+    flex-direction: column;
+    margin:2em auto;
+    max-width: max-content;
+}
+
 .content-objetivos{
     display: flex;
     flex-direction: column;
 }
 
-#formulario label{
-    text-align: center;
+#perder,#manter,#ganhar{
+    margin-left: 1em;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
 }
 
+.content-objetivos label{
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.content-inputs{
+    margin-top: 1em;
+}
+
+.content-inputs label{
+    font-size: 2em;
+}
+
+#nome,#altura,#peso{
+    font-size: 2em;
+    padding: 0.3em;
+    border-radius: 10px;
+    outline: 0;
+    border: 1px solid var(--p1);
+}
+
+#altura{
+    width: 100px;
+}
+
+#peso{
+    width:80px ;
+}
+
+#nome{
+    margin-top: 1em;
+}
+
+.content-botoes{
+    display: flex;
+    margin:3em auto 0 auto;
+}
+
+#enviar,#limpar{
+    text-transform: uppercase;
+    font-size: 2.5em;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 20px;
+    border:1px solid var(--p1);
+    margin: 0 0.5em;
+    transition: 0.4s;
+    filter: drop-shadow(10px 10px 10px var(--p1));
+}
+
+#enviar:hover,#limpar:hover{
+    transform: translateY(-10px);
+    box-shadow: 5px 5px 5px var(--p1);
+}
+
+#enviar{
+    background-color: var(--v1);
+}
+
+#limpar{
+    background-color: #dc143c;
+}
+
+#resultado_proteinas{
+    text-align: center;
+    font-size: 3em;
+}
+
+/*SECTION FINAL */
+
+/*FOOTER INICIO */
+
+footer{
+    position: relative;
+    top: 5em;
+    background-color: var(--p1);
+}
+
+.logo-footer{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+
+.titulo-footer{
+    color: var(--v3);
+    font-family: 'Candal';
+    font-weight: normal;
+    width: 100%;
+    z-index: 5;
+    text-align: center;
+    font-size: 4em;
+    text-transform: uppercase;
+    filter: drop-shadow(10px 10px 10px var(--v2));
+}
+
+.titulo-footer span{
+    font-weight: bold;
+    color: var(--v1);
+}
+
+footer p{
+    text-align: center;
+    margin: 1em 0;
+    font-size:2em ;
+    color: var(--b1);
+    filter: drop-shadow(3px 3px 3px var(--v3));
+}
+
+/*FOOTER FINAL */
